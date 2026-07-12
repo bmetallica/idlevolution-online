@@ -4,7 +4,7 @@
  "name": "Insel von bmetallica",
  "epoch": "gh-bmetallica--renaissance_age",
  "population": 540,
- "exportedAt": "2026-07-12T01:07:48.405Z",
+ "exportedAt": "2026-07-12T08:01:04.030Z",
  "map": {
   "width": 72,
   "height": 72,
@@ -1132,7 +1132,8 @@
   {
    "buildingId": "gh-bmetallica--armor_workshop",
    "x": 42,
-   "y": 49
+   "y": 49,
+   "rot": 1
   },
   {
    "buildingId": "gh-bmetallica--armor_workshop",
@@ -1223,6 +1224,11 @@
    "buildingId": "gh-bmetallica--garden",
    "x": 33,
    "y": 33
+  },
+  {
+   "buildingId": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
+   "x": 50,
+   "y": 22
   }
  ],
  "roads": [
@@ -1598,6 +1604,7 @@
   "42,52",
   "43,52",
   "44,52",
-  "45,52"
+  "45,52",
+  "49,22"
  ]
 }
