@@ -1,10 +1,15 @@
-# Baut index.json neu, sobald Insel-Daten auf main landen.
-# (Der Index-Commit selbst berührt islands/ nicht → keine Schleife.)
-name: Index neu aufbauen
+# Fallback-Indexer: Der reguläre Index-Aufbau passiert direkt im
+# validate-island-Workflow (Pushes mit GITHUB_TOKEN triggern on:push nicht —
+# GitHub-Rekursionsschutz). Dieser Workflow fängt direkte Pushes des
+# Repo-Inhabers ab und läuft zusätzlich täglich + manuell.
+name: Index neu aufbauen (Fallback)
 on:
   push:
     branches: [main]
     paths: ['islands/**']
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
