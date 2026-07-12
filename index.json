@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-12T01:08:16.972Z",
+  "updatedAt": "2026-07-12T01:25:38.767Z",
   "islands": [
     {
       "owner": "bmetallica",
@@ -8,6 +8,15 @@
       "epoch": "gh-bmetallica--renaissance_age",
       "population": 540,
       "exportedAt": "2026-07-12T01:07:48.405Z",
+      "hasOffers": false,
+      "hasPacks": true
+    },
+    {
+      "owner": "idlevolution-demo",
+      "name": "Willkommensinsel",
+      "epoch": "stone_age",
+      "population": 18,
+      "exportedAt": "2026-07-12T02:00:00Z",
       "hasOffers": false,
       "hasPacks": true
     }
