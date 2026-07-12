@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-12T00:14:05.754Z",
+  "islands": [
+    {
+      "owner": "bmetallica",
+      "name": "Testinsel",
+      "epoch": "stone_age",
+      "population": 42,
+      "exportedAt": "2026-07-12T00:00:00Z",
+      "hasOffers": false,
+      "hasPacks": false
+    }
+  ]
+}

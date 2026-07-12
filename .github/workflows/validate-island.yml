@@ -1,0 +1,54 @@
+# Prüft jeden Insel-PR und merged ihn automatisch bei Erfolg.
+#
+# Sicherheitsmodell (pull_request_target mit Schreib-Token):
+#  - Es wird IMMER nur der main-Branch dieses Repos ausgecheckt — Skripte aus
+#    dem PR werden NIE ausgeführt. PR-Inhalte werden ausschließlich als reine
+#    Daten über die API geladen und validiert.
+name: Insel-PR prüfen & mergen
+on:
+  pull_request_target:
+    paths: ['islands/**']
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Basis-Repo auschecken (nur vertrauenswürdige Skripte)
+        uses: actions/checkout@v4
+
+      - name: PR-Dateien als Daten laden
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          mkdir -p /tmp/pr
+          gh api "repos/${{ github.repository }}/pulls/$PR/files" --paginate --jq '.[].filename' > /tmp/all-touched.txt
+          gh api "repos/${{ github.repository }}/pulls/$PR/files" --paginate --jq '.[] | select(.status != "removed") | .filename' > /tmp/changed.txt
+          while read -r f; do
+            mkdir -p "/tmp/pr/$(dirname "$f")"
+            gh api "repos/$HEAD_REPO/contents/$f?ref=$HEAD_SHA" --jq .content | base64 -d > "/tmp/pr/$f"
+          done < /tmp/changed.txt
+
+      - name: Pfad-Schutz + Schema-Validierung
+        env:
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: |
+          # Auch gelöschte/umbenannte Dateien müssen im Ordner des Autors liegen
+          while read -r f; do
+            case "$f" in
+              islands/"$AUTHOR"/*) ;;
+              *) echo "❌ $f liegt außerhalb von islands/$AUTHOR/"; exit 1 ;;
+            esac
+          done < /tmp/all-touched.txt
+          node scripts/validate.mjs "$AUTHOR" /tmp/pr /tmp/changed.txt
+
+      - name: Auto-Merge
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh pr merge "${{ github.event.pull_request.number }}" --squash

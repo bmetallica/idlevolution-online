@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Idlevolution Online-Insel (v1)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "owner", "name", "epoch", "map", "instances", "exportedAt"],
+  "properties": {
+    "version": { "type": "integer", "minimum": 1, "maximum": 1 },
+    "owner": { "type": "string", "pattern": "^[a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38}$" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 40 },
+    "epoch": { "type": "string", "pattern": "^[a-z0-9_]{1,40}$" },
+    "population": { "type": "number", "minimum": 0, "maximum": 1000000 },
+    "exportedAt": { "type": "string", "maxLength": 30 },
+    "chronicle": { "type": "string", "maxLength": 500 },
+    "map": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["width", "height", "tiles"],
+      "properties": {
+        "width": { "type": "integer", "minimum": 8, "maximum": 128 },
+        "height": { "type": "integer", "minimum": 8, "maximum": 128 },
+        "tiles": { "type": "string", "pattern": "^[WGSFR]+$", "maxLength": 16384 }
+      }
+    },
+    "instances": {
+      "type": "array",
+      "maxItems": 2000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["buildingId", "x", "y"],
+        "properties": {
+          "buildingId": { "type": "string", "pattern": "^[a-z0-9_-]{1,80}$" },
+          "x": { "type": "integer", "minimum": 0, "maximum": 127 },
+          "y": { "type": "integer", "minimum": 0, "maximum": 127 },
+          "rot": { "type": "integer", "minimum": 0, "maximum": 3 }
+        }
+      }
+    },
+    "roads": {
+      "type": "array",
+      "maxItems": 8000,
+      "items": { "type": "string", "pattern": "^\\d{1,3},\\d{1,3}$" }
+    }
+  }
+}
