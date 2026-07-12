@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-07-12T22:10:38.590Z",
+ "exportedAt": "2026-07-12T23:10:36.717Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -915,6 +915,177 @@
    "workers": 0
   },
   {
+   "id": "gh-bmetallica--coal_mine",
+   "name": {
+    "de": "Kohlemine",
+    "en": "Coal Mine"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--industrial_age",
+   "cost": {
+    "wood": 150,
+    "stone": 100
+   },
+   "workers": 3,
+   "production": {
+    "inputs": {},
+    "outputs": {
+     "gh-bmetallica--coal": 0.5
+    }
+   },
+   "placement": {
+    "terrain": [
+     "rock"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "mine",
+     "accent": "#333333",
+     "wall": "#e3e8f0",
+     "roof": "#496a89",
+     "seed": 629224436
+    }
+   },
+   "buildTimeTicks": 1
+  },
+  {
+   "id": "gh-bmetallica--engine_factory",
+   "name": {
+    "de": "Motorenfabrik",
+    "en": "Engine Factory"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--industrial_age",
+   "cost": {
+    "gh-bmetallica--iron_bar": 100,
+    "gh-bmetallica--coal": 50
+   },
+   "workers": 4,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--iron_bar": 0.8,
+     "gh-bmetallica--coal": 0.8
+    },
+    "outputs": {
+     "gh-bmetallica--engine_part": 0.3
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#708090",
+     "wall": "#bec3c9",
+     "roof": "#527799",
+     "seed": 868495002
+    }
+   },
+   "buildTimeTicks": 1
+  },
+  {
+   "id": "gh-bmetallica--power_plant",
+   "name": {
+    "de": "Kraftwerk",
+    "en": "Power Plant"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--modern_age",
+   "cost": {
+    "gh-bmetallica--coal": 100,
+    "gh-bmetallica--engine_part": 20
+   },
+   "workers": 5,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--coal": 1,
+     "gh-bmetallica--engine_part": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--electricity": 0.2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#ffd700",
+     "wall": "#c1c6cd",
+     "roof": "#4f7294",
+     "seed": 1914834336
+    }
+   },
+   "buildTimeTicks": 1
+  },
+  {
+   "id": "gh-bmetallica--modern_housing",
+   "name": {
+    "de": "Modernes Wohnviertel",
+    "en": "Modern Housing"
+   },
+   "category": "housing",
+   "epoch": "gh-bmetallica--modern_age",
+   "cost": {
+    "gh-bmetallica--bricks": 50,
+    "gh-bmetallica--engine_part": 10
+   },
+   "housing": {
+    "capacity": 20
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "house",
+     "accent": "#a9a9a9",
+     "wall": "#d2d7df",
+     "roof": "#466683",
+     "seed": 12423882
+    }
+   },
+   "buildTimeTicks": 1,
+   "workers": 0
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -1199,6 +1370,48 @@
    "icon": "💎"
   },
   {
+   "id": "gh-bmetallica--coal",
+   "name": {
+    "de": "Kohle",
+    "en": "Coal"
+   },
+   "category": "raw",
+   "epoch": "gh-bmetallica--industrial_age",
+   "baseValue": 5,
+   "description": {
+    "de": "Ein fossiler Brennstoff, der die industrielle Revolution ermöglicht."
+   },
+   "icon": "🛢️"
+  },
+  {
+   "id": "gh-bmetallica--engine_part",
+   "name": {
+    "de": "Maschinenteil",
+    "en": "Engine Part"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--industrial_age",
+   "baseValue": 50,
+   "description": {
+    "de": "Präzise gefertigte Komponenten für Dampfmaschinen und Fabrikantriebe."
+   },
+   "icon": "🟡"
+  },
+  {
+   "id": "gh-bmetallica--electricity",
+   "name": {
+    "de": "Elektrizität",
+    "en": "Electricity"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--modern_age",
+   "baseValue": 200,
+   "description": {
+    "de": "Die Kraft der Elektrizität erleuchtet die moderne Welt."
+   },
+   "icon": "🟢"
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
    "name": {
     "de": "Muscheln",
@@ -1329,6 +1542,41 @@
     "name": {
      "de": "Arbeiter",
      "en": "Worker"
+    }
+   },
+   "needs": {
+    "gh-bmetallica--armor": 0.01
+   },
+   "advance": {
+    "resources": {
+     "gh-bmetallica--coal": 20,
+     "gh-bmetallica--engine_part": 10
+    },
+    "buildings": {
+     "gh-bmetallica--coal_mine": 1,
+     "gh-bmetallica--engine_factory": 1
+    },
+    "population": 100
+   }
+  },
+  {
+   "id": "gh-bmetallica--modern_age",
+   "order": 6,
+   "name": {
+    "de": "Moderne",
+    "en": "Modern Age"
+   },
+   "description": {
+    "de": "Die Ära der Elektrizität und Massenproduktion."
+   },
+   "modifiers": {
+    "productionMultiplier": 0.3,
+    "populationGrowth": 0.015
+   },
+   "tier": {
+    "name": {
+     "de": "Technokraten",
+     "en": "Technocrats"
     }
    },
    "needs": {
