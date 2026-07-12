@@ -1,0 +1,19 @@
+{
+ "version": 1,
+ "owner": "idlevolution-demo",
+ "accepts": [
+  {
+   "offerId": "bmetallica-2-mrhi7zlu",
+   "offerOwner": "bmetallica",
+   "give": {
+    "resourceId": "wood",
+    "amount": 50
+   },
+   "want": {
+    "resourceId": "stone",
+    "amount": 20
+   },
+   "acceptedAt": "2026-07-12T08:05:00Z"
+  }
+ ]
+}
