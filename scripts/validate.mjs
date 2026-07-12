@@ -56,7 +56,7 @@ if (islandFile) {
   if (d.version !== 1) bad('version muss 1 sein');
   if (d.owner !== author) bad(`owner "${d.owner}" ≠ PR-Autor "${author}"`);
   if (!str(d.name, 40) || !d.name.length) bad('name fehlt/zu lang');
-  if (!str(d.epoch, 40, /^[a-z0-9_]+$/)) bad('epoch ungültig');
+  if (!str(d.epoch, 60, /^[a-z0-9_-]+$/)) bad('epoch ungültig'); // Bindestrich: genamespacete IDs (gh-<user>--x)
   if (d.chronicle !== undefined && !str(d.chronicle, 500)) bad('chronicle zu lang');
   if (typeof d.map !== 'object' || d.map === null) bad('map fehlt');
   if (!int(d.map.width, 8, 128) || !int(d.map.height, 8, 128)) bad('map-Maße ungültig');
