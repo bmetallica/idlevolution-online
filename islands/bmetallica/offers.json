@@ -1,19 +1,12 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "offers": [
+ "offers": [],
+ "closed": [
   {
    "id": "bmetallica-2-mrhi7zlu",
-   "give": {
-    "resourceId": "wood",
-    "amount": 50
-   },
-   "want": {
-    "resourceId": "stone",
-    "amount": 20
-   },
-   "createdAt": "2026-07-12T08:01:04.002Z"
+   "winner": "idlevolution-demo",
+   "at": "2026-07-12T08:02:17.264Z"
   }
- ],
- "closed": []
+ ]
 }
