@@ -19,8 +19,10 @@ const USER_RE = /^[a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38}$/;
 
 const fail = (msg) => { console.error(`❌ ${msg}`); process.exit(1); };
 const files = readFileSync(listFile, 'utf8').split('\n').map((s) => s.trim()).filter(Boolean);
-if (!files.length) fail('PR enthält keine Dateien');
 if (!USER_RE.test(author)) fail(`Ungültiger Autor: ${author}`);
+// Reine Lösch-PRs („Offline gehen") haben keine geänderten Dateien — der
+// Pfad-Schutz für gelöschte Dateien läuft im Workflow über all-touched.txt.
+if (!files.length) { console.log(`✅ Lösch-PR von ${author} (keine geänderten Dateien)`); process.exit(0); }
 
 // ── 1) Pfad-Schutz: nur der eigene Ordner, nur erlaubte Dateinamen ──
 for (const f of files) {
@@ -72,6 +74,57 @@ if (islandFile) {
   if (d.roads !== undefined) {
     if (!Array.isArray(d.roads) || d.roads.length > 8000) bad('roads ungültig');
     for (const r of d.roads) if (!str(r, 8, /^\d{1,3},\d{1,3}$/)) bad('roads-Eintrag ungültig');
+  }
+}
+
+// ── 4) packs.json strukturell prüfen (Definitionen für andere Spiele) ──
+const CONTENT_ID = /^[a-z0-9_-]{1,80}$/;
+const packsFile = files.find((f) => f.endsWith('/packs.json'));
+if (packsFile) {
+  const d = json[packsFile];
+  const bad = (m) => fail(`${packsFile}: ${m}`);
+  if (typeof d !== 'object' || d === null || Array.isArray(d)) bad('kein Objekt');
+  if (d.owner !== author) bad(`owner ≠ PR-Autor`);
+  for (const [key, max] of [['buildings', 200], ['resources', 200], ['epochs', 30]]) {
+    if (d[key] !== undefined) {
+      if (!Array.isArray(d[key]) || d[key].length > max) bad(`${key} ungültig/zu viele`);
+      for (const it of d[key]) {
+        if (typeof it !== 'object' || it === null || !CONTENT_ID.test(String(it.id || ''))) bad(`${key}: id ungültig`);
+        if (JSON.stringify(it).length > 8000) bad(`${key}/${it.id}: Definition zu groß`);
+      }
+    }
+  }
+}
+
+// ── 5) offers.json / accepts.json strukturell prüfen (Handel) ──
+const OFFER_ID = /^[a-z0-9-]{3,80}$/;
+const stakeOk = (s) => s && typeof s === 'object' && CONTENT_ID.test(String(s.resourceId || '')) && Number.isInteger(s.amount) && s.amount >= 1 && s.amount <= 1000000;
+const offersFile = files.find((f) => f.endsWith('/offers.json'));
+if (offersFile) {
+  const d = json[offersFile];
+  const bad = (m) => fail(`${offersFile}: ${m}`);
+  if (d?.owner !== author) bad('owner ≠ PR-Autor');
+  if (d.offers !== undefined && (!Array.isArray(d.offers) || d.offers.length > 20)) bad('offers ungültig/zu viele');
+  for (const o of d.offers || []) {
+    if (!OFFER_ID.test(String(o.id || ''))) bad('Angebots-ID ungültig');
+    if (!stakeOk(o.give) || !stakeOk(o.want)) bad(`Angebot ${o.id}: give/want ungültig`);
+  }
+  if (d.closed !== undefined && (!Array.isArray(d.closed) || d.closed.length > 100)) bad('closed ungültig/zu viele');
+  for (const c of d.closed || []) {
+    if (!OFFER_ID.test(String(c.id || ''))) bad('Tombstone-ID ungültig');
+    if (c.winner != null && !USER_RE.test(String(c.winner))) bad('Tombstone-winner ungültig');
+  }
+}
+const acceptsFile = files.find((f) => f.endsWith('/accepts.json'));
+if (acceptsFile) {
+  const d = json[acceptsFile];
+  const bad = (m) => fail(`${acceptsFile}: ${m}`);
+  if (d?.owner !== author) bad('owner ≠ PR-Autor');
+  if (d.accepts !== undefined && (!Array.isArray(d.accepts) || d.accepts.length > 50)) bad('accepts ungültig/zu viele');
+  for (const a of d.accepts || []) {
+    if (!OFFER_ID.test(String(a.offerId || ''))) bad('accept.offerId ungültig');
+    if (!USER_RE.test(String(a.offerOwner || ''))) bad('accept.offerOwner ungültig');
+    if (!stakeOk(a.give) || !stakeOk(a.want)) bad('accept: give/want ungültig');
   }
 }
 
