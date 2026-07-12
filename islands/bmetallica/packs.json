@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-07-12T01:07:48.406Z",
+ "exportedAt": "2026-07-12T08:01:04.032Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -784,6 +784,207 @@
      "seed": 1282949595
     }
    }
+  },
+  {
+   "id": "gh-bmetallica--paper_mill",
+   "name": {
+    "de": "Papiermühle",
+    "en": "Paper Mill"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--renaissance_age",
+   "cost": {
+    "wood": 100,
+    "gh-bmetallica--cloth": 50
+   },
+   "buildTimeTicks": 50,
+   "workers": 3,
+   "production": {
+    "inputs": {
+     "wood": 0.8,
+     "gh-bmetallica--cloth": 0.1
+    },
+    "outputs": {
+     "gh-bmetallica--paper": 0.5
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "sawmill",
+     "wall": "#bac5d0",
+     "roof": "#6d7b85",
+     "accent": "#4dcb88",
+     "seed": 1897650148
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--gunpowder_factory",
+   "name": {
+    "de": "Schießpulverfabrik",
+    "en": "Gunpowder Factory"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--renaissance_age",
+   "cost": {
+    "gh-bmetallica--steel": 200,
+    "gh-bmetallica--clay": 50
+   },
+   "buildTimeTicks": 80,
+   "workers": 4,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--steel": 0.3,
+     "gh-bmetallica--clay": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--gunpowder": 0.8
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "accent": "#4a4a4a",
+     "wall": "#afb9c3",
+     "roof": "#697781",
+     "seed": 4212977349
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--renaissance_mansion",
+   "name": {
+    "de": "Renaissance-Palais",
+    "en": "Renaissance Mansion"
+   },
+   "category": "housing",
+   "epoch": "gh-bmetallica--renaissance_age",
+   "cost": {
+    "gh-bmetallica--bricks": 100,
+    "wood": 150
+   },
+   "buildTimeTicks": 100,
+   "housing": {
+    "capacity": 40
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "house",
+     "roof": "#8b4513",
+     "wall": "#98a1aa",
+     "accent": "#4dcb64",
+     "seed": 344574851
+    }
+   },
+   "workers": 0
+  },
+  {
+   "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
+   "name": {
+    "de": "Muschelsammler",
+    "en": "Shell Gatherer"
+   },
+   "description": {
+    "de": "Sammelt Muscheln am Strand — ein Gruß von der Willkommensinsel."
+   },
+   "category": "production",
+   "epoch": "stone_age",
+   "icon": "🐚",
+   "workers": 1,
+   "buildTimeTicks": 10,
+   "cost": {
+    "wood": 15
+   },
+   "production": {
+    "inputs": {},
+    "outputs": {
+     "gh-bmetallica--gh-idlevolution-demo--muscheln": 0.2
+    }
+   },
+   "placement": {
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "gatherer",
+     "wall": "#c9b8a0",
+     "roof": "#7d9db0",
+     "accent": "#e8d5b0",
+     "seed": 424242
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--gh-idlevolution-demo--zierbrunnen",
+   "name": {
+    "de": "Zierbrunnen",
+    "en": "Ornamental Fountain"
+   },
+   "description": {
+    "de": "Ein hübscher Brunnen — reine Zierde."
+   },
+   "category": "civic",
+   "epoch": "stone_age",
+   "icon": "⛲",
+   "workers": 0,
+   "buildTimeTicks": 8,
+   "cost": {
+    "stone": 20
+   },
+   "placement": {
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "wall": "#b8c4cc",
+     "roof": "#6a8a9a",
+     "accent": "#8fd4e8",
+     "seed": 777
+    }
+   }
   }
  ],
  "resources": [
@@ -968,6 +1169,45 @@
     "de": "Verarbeitetes Leder für Kleidung und Ausrüstung."
    },
    "icon": "🟫"
+  },
+  {
+   "id": "gh-bmetallica--paper",
+   "name": {
+    "de": "Papier",
+    "en": "Paper"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--renaissance_age",
+   "baseValue": 5,
+   "description": {
+    "de": "Verarbeitetes Papier für Druckereien und Verwaltung."
+   },
+   "icon": "📜"
+  },
+  {
+   "id": "gh-bmetallica--gunpowder",
+   "name": {
+    "de": "Schießpulver",
+    "en": "Gunpowder"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--renaissance_age",
+   "baseValue": 20,
+   "description": {
+    "de": "Ein gefährliches, aber revolutionäres Gut der Alchemie."
+   },
+   "icon": "💎"
+  },
+  {
+   "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
+   "name": {
+    "de": "Muscheln",
+    "en": "Shells"
+   },
+   "icon": "🐚",
+   "category": "luxury",
+   "baseValue": 3,
+   "epoch": "stone_age"
   }
  ],
  "epochs": [
@@ -1065,6 +1305,30 @@
     "name": {
      "de": "Bürger",
      "en": "Citizens"
+    }
+   },
+   "needs": {
+    "gh-bmetallica--armor": 0.01
+   }
+  },
+  {
+   "id": "gh-bmetallica--industrial_age",
+   "order": 5,
+   "name": {
+    "de": "Industriezeitalter",
+    "en": "Industrial Age"
+   },
+   "description": {
+    "de": "Dampfmaschinen und Fabriken verändern die Welt grundlegend."
+   },
+   "modifiers": {
+    "productionMultiplier": 1.2,
+    "populationGrowth": 0.015
+   },
+   "tier": {
+    "name": {
+     "de": "Arbeiter",
+     "en": "Worker"
     }
    },
    "needs": {
