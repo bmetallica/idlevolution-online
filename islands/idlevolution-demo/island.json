@@ -1,0 +1,59 @@
+{
+ "version": 1,
+ "owner": "idlevolution-demo",
+ "name": "Willkommensinsel",
+ "epoch": "stone_age",
+ "population": 18,
+ "exportedAt": "2026-07-12T02:00:00Z",
+ "chronicle": "Eine kleine Insel, die jeden neuen Online-Siedler begr\u00fc\u00dft.",
+ "map": {
+  "width": 24,
+  "height": 24,
+  "tiles": "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWSSSSSSSSWWWWWWWWWWWWWWSSGRGFGGFGSSWWWWWWWWWWWSSFGFFGGFGGGSSWWWWWWWWWSGGGFGGRFGGRGGGSWWWWWWWSSGFFGGGGGGGGGGGSSWWWWWWSGGGGGFGGRGFGGGGGSWWWWWSGGGGGGGGFGGGGGGGFGSWWWWSRFFGFGGGFGGGGGGGGGSWWWWSGRRGGGGGFGGGGGGGGFSWWWWSGGGGGGFGFFGRGFFRFGSWWWWSFGGRGGGFGGGGFFGGGRSWWWWSFGGRGFGGGGGGRGGGGGSWWWWSGGGGGGGGGFFGGGGGGGSWWWWSGGGGGGGGGGGGFGGGGGSWWWWWSRGGGGGGGGRFRGGRGSWWWWWWSSGGGGFFGGGGGGGGSSWWWWWWWSGGGGGGFGGGGGGGSWWWWWWWWWSSGGGFGRFGRGSSWWWWWWWWWWWSSGGGGGGFGSSWWWWWWWWWWWWWWSSSSSSSSWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"
+ },
+ "instances": [
+  {
+   "buildingId": "hut",
+   "x": 9,
+   "y": 9,
+   "rot": 0
+  },
+  {
+   "buildingId": "hut",
+   "x": 13,
+   "y": 9,
+   "rot": 0
+  },
+  {
+   "buildingId": "gatherer_hut",
+   "x": 9,
+   "y": 12,
+   "rot": 0
+  },
+  {
+   "buildingId": "gatherer_hut",
+   "x": 12,
+   "y": 12,
+   "rot": 0
+  },
+  {
+   "buildingId": "hut",
+   "x": 10,
+   "y": 14,
+   "rot": 0
+  },
+  {
+   "buildingId": "gh-idlevolution-demo--muschelsammler",
+   "x": 14,
+   "y": 12,
+   "rot": 0
+  }
+ ],
+ "roads": [
+  "9,10",
+  "10,10",
+  "12,10",
+  "13,10",
+  "14,10"
+ ]
+}
