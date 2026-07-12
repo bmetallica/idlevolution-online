@@ -1,0 +1,19 @@
+{
+ "version": 1,
+ "owner": "bmetallica",
+ "offers": [
+  {
+   "id": "bmetallica-2-mrhi7zlu",
+   "give": {
+    "resourceId": "wood",
+    "amount": 50
+   },
+   "want": {
+    "resourceId": "stone",
+    "amount": 20
+   },
+   "createdAt": "2026-07-12T08:01:04.002Z"
+  }
+ ],
+ "closed": []
+}
