@@ -1,0 +1,31 @@
+{
+ "version": 1,
+ "owner": "bmetallica",
+ "name": "Testinsel",
+ "epoch": "stone_age",
+ "population": 42,
+ "exportedAt": "2026-07-12T00:00:00Z",
+ "chronicle": "Erster Online-Test.",
+ "map": {
+  "width": 16,
+  "height": 16,
+  "tiles": "WWWWWWWWWWWWWWWWWGGGGGGGGGGGGGGWWGGGGGGGGGGGGGGWWGGGGGGGGGGGGGGWWGGGGGGGGGGGGGGWWGGGGGGGGGGGGGGWWGGGGGGGGGGGGGGWWGGGGGGGGGGGGGGWWGGGGGGGGGGGGGGWWGGGGGGGGGGGGGGWWGGGGGGGGGGGGGGWWGGGGGGGGGGGGGGWWGGGGGGGGGGGGGGWWGGGGGGGGGGGGGGWWGGGGGGGGGGGGGGWWWWWWWWWWWWWWWWW"
+ },
+ "instances": [
+  {
+   "buildingId": "hut",
+   "x": 3,
+   "y": 3,
+   "rot": 0
+  },
+  {
+   "buildingId": "gatherer_hut",
+   "x": 5,
+   "y": 3
+  }
+ ],
+ "roads": [
+  "4,3",
+  "4,4"
+ ]
+}
