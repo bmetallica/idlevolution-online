@@ -10,11 +10,11 @@
     "en": "Shell Gatherer"
    },
    "description": {
-    "de": "Sammelt Muscheln am Strand \u2014 ein Gru\u00df von der Willkommensinsel."
+    "de": "Sammelt Muscheln am Strand — ein Gruß von der Willkommensinsel."
    },
    "category": "production",
    "epoch": "stone_age",
-   "icon": "\ud83d\udc1a",
+   "icon": "🐚",
    "workers": 1,
    "buildTimeTicks": 10,
    "cost": {
@@ -49,11 +49,11 @@
     "en": "Ornamental Fountain"
    },
    "description": {
-    "de": "Ein h\u00fcbscher Brunnen \u2014 reine Zierde."
+    "de": "Ein hübscher Brunnen — reine Zierde."
    },
    "category": "civic",
    "epoch": "stone_age",
-   "icon": "\u26f2",
+   "icon": "⛲",
    "workers": 0,
    "buildTimeTicks": 8,
    "cost": {
@@ -67,7 +67,7 @@
    },
    "meta": {
     "art": {
-     "shape": "temple",
+     "shape": "fountain",
      "wall": "#b8c4cc",
      "roof": "#6a8a9a",
      "accent": "#8fd4e8",
@@ -83,7 +83,7 @@
     "de": "Muscheln",
     "en": "Shells"
    },
-   "icon": "\ud83d\udc1a",
+   "icon": "🐚",
    "category": "luxury",
    "baseValue": 3
   }
