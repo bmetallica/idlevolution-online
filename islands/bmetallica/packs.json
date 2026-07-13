@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-07-12T23:10:36.717Z",
+ "exportedAt": "2026-07-13T03:04:00.029Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -1086,6 +1086,167 @@
    "workers": 0
   },
   {
+   "id": "gh-bmetallica--electronics_factory",
+   "name": {
+    "de": "Elektronikfabrik",
+    "en": "Electronics Factory"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--modern_age",
+   "cost": {
+    "gh-bmetallica--iron_bar": 100,
+    "gh-bmetallica--engine_part": 50
+   },
+   "buildTimeTicks": 100,
+   "workers": 5,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--electricity": 0.5,
+     "gh-bmetallica--engine_part": 0.3
+    },
+    "outputs": {
+     "gh-bmetallica--microchip": 0.182
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#4a90e2",
+     "wall": "#bdc3c7",
+     "roof": "#2c3e50",
+     "seed": 2449747537
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--software_dev_center",
+   "name": {
+    "de": "Software-Entwicklungszentrum",
+    "en": "Software Development Center"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--modern_age",
+   "cost": {
+    "gh-bmetallica--iron_bar": 50,
+    "gh-bmetallica--engine_part": 20
+   },
+   "buildTimeTicks": 80,
+   "workers": 4,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--electricity": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--software": 0.093
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#50e3c2",
+     "wall": "#d5dbe2",
+     "roof": "#466683",
+     "seed": 3979035344
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--data_center",
+   "name": {
+    "de": "Rechenzentrum",
+    "en": "Data Center"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--information_age",
+   "cost": {
+    "gh-bmetallica--iron_bar": 300,
+    "gh-bmetallica--engine_part": 150
+   },
+   "buildTimeTicks": 150,
+   "workers": 5,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--electricity": 0.6
+    },
+    "outputs": {
+     "gh-bmetallica--software": 0.1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#9b59b6",
+     "wall": "#c1c6cd",
+     "roof": "#3f5b75",
+     "seed": 1083238435
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--high_tech_condo",
+   "name": {
+    "de": "High-Tech-Condo",
+    "en": "High-Tech Condo"
+   },
+   "category": "housing",
+   "epoch": "gh-bmetallica--information_age",
+   "cost": {
+    "gh-bmetallica--microchip": 10,
+    "gh-bmetallica--software": 5
+   },
+   "buildTimeTicks": 120,
+   "workers": 0,
+   "housing": {
+    "capacity": 30
+   },
+   "meta": {
+    "art": {
+     "shape": "house",
+     "accent": "#ecf0f1",
+     "wall": "#cfd4db",
+     "roof": "#43617e",
+     "seed": 3028294084
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "sand"
+    ],
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -1149,7 +1310,7 @@
    },
    "meta": {
     "art": {
-     "shape": "temple",
+     "shape": "fountain",
      "wall": "#b8c4cc",
      "roof": "#6a8a9a",
      "accent": "#8fd4e8",
@@ -1412,6 +1573,34 @@
    "icon": "🟢"
   },
   {
+   "id": "gh-bmetallica--microchip",
+   "name": {
+    "de": "Mikrochip",
+    "en": "Microchip"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--modern_age",
+   "baseValue": 700,
+   "description": {
+    "de": "Hochpräzise Siliziumbausteine für die moderne Elektronik."
+   },
+   "icon": "🔵"
+  },
+  {
+   "id": "gh-bmetallica--software",
+   "name": {
+    "de": "Software",
+    "en": "Software"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--information_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Digitale Instruktionen, die Maschinen und Systeme steuern."
+   },
+   "icon": "🟣"
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
    "name": {
     "de": "Muscheln",
@@ -1581,6 +1770,40 @@
    },
    "needs": {
     "gh-bmetallica--armor": 0.01
+   },
+   "advance": {
+    "resources": {
+     "gh-bmetallica--microchip": 10,
+     "gh-bmetallica--engine_part": 10
+    },
+    "buildings": {
+     "gh-bmetallica--electronics_factory": 1
+    },
+    "population": 10
+   }
+  },
+  {
+   "id": "gh-bmetallica--information_age",
+   "order": 7,
+   "name": {
+    "de": "Informationszeitalter",
+    "en": "Information Age"
+   },
+   "description": {
+    "de": "Die Ära der Daten, des Internets und der globalen Vernetzung."
+   },
+   "modifiers": {
+    "productionMultiplier": 0.375,
+    "populationGrowth": 0.015
+   },
+   "tier": {
+    "name": {
+     "de": "Datenarchitekten",
+     "en": "Data Architects"
+    }
+   },
+   "needs": {
+    "gh-bmetallica--software": 0.01
    }
   }
  ]
