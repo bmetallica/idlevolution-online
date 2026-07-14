@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-07-13T03:04:00.029Z",
+ "exportedAt": "2026-07-14T03:02:51.977Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -1247,6 +1247,125 @@
    }
   },
   {
+   "id": "gh-bmetallica--quantum_lab",
+   "name": {
+    "de": "Quantenlabor",
+    "en": "Quantum Lab"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--quantum_age",
+   "cost": {
+    "gh-bmetallica--software": 50,
+    "gh-bmetallica--microchip": 50
+   },
+   "buildTimeTicks": 100,
+   "workers": 5,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--software": 0.3,
+     "gh-bmetallica--microchip": 0.3
+    },
+    "outputs": {
+     "gh-bmetallica--quantum_processor": 0.15
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#00f2ff",
+     "wall": "#1a1a2e",
+     "roof": "#00d4ff",
+     "seed": 3359630454
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--server_farm",
+   "name": {
+    "de": "Serverfarm",
+    "en": "Server Farm"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--quantum_age",
+   "cost": {
+    "gh-bmetallica--microchip": 20,
+    "gh-bmetallica--software": 20
+   },
+   "buildTimeTicks": 80,
+   "workers": 5,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--electricity": 0.8
+    },
+    "outputs": {
+     "gh-bmetallica--satellite_data": 0.2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 3,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#00f2ff",
+     "wall": "#1a1a2e",
+     "roof": "#00d4ff",
+     "seed": 1509088995
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--quantum_housing",
+   "name": {
+    "de": "Quanten-Apartment",
+    "en": "Quantum Apartment"
+   },
+   "category": "housing",
+   "epoch": "gh-bmetallica--quantum_age",
+   "cost": {
+    "gh-bmetallica--microchip": 10,
+    "gh-bmetallica--software": 10
+   },
+   "buildTimeTicks": 60,
+   "workers": 0,
+   "housing": {
+    "capacity": 15
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "house",
+     "accent": "#00f2ff",
+     "wall": "#1a1a2e",
+     "roof": "#00d4ff",
+     "seed": 251809618
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -1601,6 +1720,34 @@
    "icon": "🟣"
   },
   {
+   "id": "gh-bmetallica--quantum_processor",
+   "name": {
+    "de": "Quantenprozessor",
+    "en": "Quantum Processor"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--quantum_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochkomplexer Prozessor, der auf Quantenmechanik basiert."
+   },
+   "icon": "🟥"
+  },
+  {
+   "id": "gh-bmetallica--satellite_data",
+   "name": {
+    "de": "Satellitendaten",
+    "en": "Satellite Data"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--quantum_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Echtzeitdatenströme aus dem orbitalen Netzwerk."
+   },
+   "icon": "🟩"
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
    "name": {
     "de": "Muscheln",
@@ -1624,7 +1771,7 @@
     "de": "Die Ära der Ritter, Burgen und fortschrittlicher Handwerkskunst."
    },
    "modifiers": {
-    "productionMultiplier": 1.2,
+    "productionMultiplier": 1.52,
     "populationGrowth": 0.015
    },
    "tier": {
@@ -1634,7 +1781,7 @@
     }
    },
    "needs": {
-    "gh-bmetallica--steel": 0.01
+    "gh-bmetallica--steel": 0.002
    },
    "advance": {
     "resources": {
@@ -1665,7 +1812,11 @@
     }
    },
    "needs": {
-    "gh-bmetallica--steel": 0.01
+    "gh-bmetallica--steel": 0.002
+   },
+   "modifiers": {
+    "productionMultiplier": 1.38,
+    "populationGrowth": 0.012
    },
    "advance": {
     "resources": {
@@ -1700,7 +1851,7 @@
     "population": 600
    },
    "modifiers": {
-    "productionMultiplier": 1.3,
+    "productionMultiplier": 1.67,
     "populationGrowth": 0.015
    },
    "tier": {
@@ -1710,7 +1861,7 @@
     }
    },
    "needs": {
-    "gh-bmetallica--armor": 0.01
+    "gh-bmetallica--armor": 0.0013
    }
   },
   {
@@ -1724,7 +1875,7 @@
     "de": "Dampfmaschinen und Fabriken verändern die Welt grundlegend."
    },
    "modifiers": {
-    "productionMultiplier": 1.2,
+    "productionMultiplier": 1.84,
     "populationGrowth": 0.015
    },
    "tier": {
@@ -1734,7 +1885,7 @@
     }
    },
    "needs": {
-    "gh-bmetallica--armor": 0.01
+    "gh-bmetallica--armor": 0.0013
    },
    "advance": {
     "resources": {
@@ -1759,7 +1910,7 @@
     "de": "Die Ära der Elektrizität und Massenproduktion."
    },
    "modifiers": {
-    "productionMultiplier": 0.3,
+    "productionMultiplier": 2.02,
     "populationGrowth": 0.015
    },
    "tier": {
@@ -1769,7 +1920,7 @@
     }
    },
    "needs": {
-    "gh-bmetallica--armor": 0.01
+    "gh-bmetallica--armor": 0.0013
    },
    "advance": {
     "resources": {
@@ -1793,7 +1944,7 @@
     "de": "Die Ära der Daten, des Internets und der globalen Vernetzung."
    },
    "modifiers": {
-    "productionMultiplier": 0.375,
+    "productionMultiplier": 2.22,
     "populationGrowth": 0.015
    },
    "tier": {
@@ -1803,7 +1954,39 @@
     }
    },
    "needs": {
-    "gh-bmetallica--software": 0.01
+    "gh-bmetallica--software": 0.0001
+   },
+   "advance": {
+    "resources": {
+     "gh-bmetallica--software": 500,
+     "gh-bmetallica--microchip": 100
+    },
+    "buildings": {},
+    "population": 1000
+   }
+  },
+  {
+   "id": "gh-bmetallica--quantum_age",
+   "order": 8,
+   "name": {
+    "de": "Quantenzeitalter",
+    "en": "Quantum Age"
+   },
+   "description": {
+    "de": "Die Ära der unmöglichen Rechenleistung und der Quantenüberlegenheit."
+   },
+   "modifiers": {
+    "productionMultiplier": 2.4420000000000006,
+    "populationGrowth": 0.02
+   },
+   "tier": {
+    "name": {
+     "de": "Quanten-Ingenieure",
+     "en": "Quantum Engineers"
+    }
+   },
+   "needs": {
+    "gh-bmetallica--gh-idlevolution-demo--muscheln": 0.01
    }
   }
  ]
