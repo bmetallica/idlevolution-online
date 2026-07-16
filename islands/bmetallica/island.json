@@ -4,7 +4,7 @@
  "name": "Insel von bmetallica",
  "epoch": "gh-bmetallica--information_age",
  "population": 710,
- "exportedAt": "2026-07-15T03:02:41.441Z",
+ "exportedAt": "2026-07-16T03:02:46.967Z",
  "map": {
   "width": 90,
   "height": 90,
@@ -1202,8 +1202,8 @@
   },
   {
    "buildingId": "harbor",
-   "x": 53,
-   "y": 21
+   "x": 47,
+   "y": 16
   },
   {
    "buildingId": "gh-bmetallica--armor_workshop",
@@ -2291,6 +2291,17 @@
   "76,43",
   "77,43",
   "78,43",
-  "78,42"
+  "78,42",
+  "47,17",
+  "48,17",
+  "52,21",
+  "52,20",
+  "52,19",
+  "52,18",
+  "51,18",
+  "50,18",
+  "49,18",
+  "48,18",
+  "47,18"
  ]
 }
