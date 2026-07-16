@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-07-15T03:02:41.443Z",
+ "exportedAt": "2026-07-16T03:02:46.969Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -1447,6 +1447,150 @@
    }
   },
   {
+   "id": "gh-bmetallica--cryptography_center",
+   "name": {
+    "de": "Kryptographiezentrum",
+    "en": "Cryptography Center"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--quantum_age",
+   "cost": {
+    "gh-bmetallica--quantum_processor": 50,
+    "gh-bmetallica--software": 50
+   },
+   "production": {
+    "inputs": {
+     "gh-bmetallica--software": 0.5,
+     "gh-bmetallica--quantum_processor": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--quantum_encryption": 0.2
+    }
+   },
+   "housing": {},
+   "requires": {
+    "epoch": "gh-bmetallica--quantum_age"
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#00f2ff",
+     "wall": "#1a1a2e",
+     "roof": "#0044ff",
+     "seed": 3408832449
+    }
+   },
+   "buildTimeTicks": 1,
+   "workers": 0
+  },
+  {
+   "id": "gh-bmetallica--quantum_mainframe",
+   "name": {
+    "de": "Quanten-Mainframe",
+    "en": "Quantum Mainframe"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--quantum_age",
+   "cost": {
+    "gh-bmetallica--quantum_processor": 40,
+    "gh-bmetallica--satellite_data": 40,
+    "gh-bmetallica--quantum_encryption": 40
+   },
+   "production": {
+    "inputs": {
+     "gh-bmetallica--quantum_processor": 0.3,
+     "gh-bmetallica--satellite_data": 0.3,
+     "gh-bmetallica--quantum_encryption": 0.3
+    },
+    "outputs": {
+     "gh-bmetallica--neural_network_core": 0.1
+    }
+   },
+   "housing": {},
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--cryptography_center": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "warehouse",
+     "accent": "#00f2ff",
+     "wall": "#1a1a2e",
+     "roof": "#0044ff",
+     "seed": 2713156439
+    }
+   },
+   "buildTimeTicks": 1,
+   "workers": 0
+  },
+  {
+   "id": "gh-bmetallica--quantum_complex",
+   "name": {
+    "de": "Quanten-Komplex",
+    "en": "Quantum Complex"
+   },
+   "category": "housing",
+   "epoch": "gh-bmetallica--quantum_age",
+   "cost": {
+    "gh-bmetallica--microchip": 50,
+    "gh-bmetallica--quantum_processor": 10
+   },
+   "housing": {
+    "capacity": 25
+   },
+   "requires": {
+    "epoch": "gh-bmetallica--quantum_age"
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "house",
+     "accent": "#00f2ff",
+     "wall": "#ffffff",
+     "roof": "#0044ff",
+     "seed": 3228824397
+    }
+   },
+   "buildTimeTicks": 1,
+   "workers": 0
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -1855,6 +1999,20 @@
     "de": "Unknackbare Verschlüsselung auf Basis von Quantenzuständen."
    },
    "icon": "🟪"
+  },
+  {
+   "id": "gh-bmetallica--neural_network_core",
+   "name": {
+    "de": "Neuraler Kern",
+    "en": "Neural Network Core"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--quantum_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochkomplexer Speicherbaustein für künstliche neuronale Netzwerke."
+   },
+   "icon": "⛰️"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
