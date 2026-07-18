@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-07-17T03:11:42.645Z",
+ "exportedAt": "2026-07-18T03:04:31.281Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -1591,6 +1591,131 @@
    "workers": 0
   },
   {
+   "id": "gh-bmetallica--security_vault",
+   "name": {
+    "de": "Sicherheitsvault",
+    "en": "Security Vault"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--quantum_age",
+   "cost": {
+    "gh-bmetallica--cyber_security_key": 50,
+    "gh-bmetallica--neural_network_core": 20
+   },
+   "description": {
+    "de": "Ein hochgesicherter Speicher für die wertvollsten Datenfragmente der Menschheit, geschützt durch Quantenverschlüsselung."
+   },
+   "placement": {
+    "terrain": [
+     "rock"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#00f2ff",
+     "wall": "#d9dee6",
+     "roof": "#4b6c8b",
+     "seed": 2615866456
+    }
+   },
+   "buildTimeTicks": 1,
+   "workers": 0
+  },
+  {
+   "id": "gh-bmetallica--bio_synthesizer",
+   "name": {
+    "de": "Bio-Synthesizer",
+    "en": "Bio-Synthesizer"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--quantum_age",
+   "cost": {
+    "gh-bmetallica--electricity": 50,
+    "gh-bmetallica--neural_network_core": 30
+   },
+   "description": {
+    "de": "Eine Anlage, die biologisches Gewebe mit synthetischen Nanopartiklen auf Quantenebene verschmilzt."
+   },
+   "production": {
+    "inputs": {
+     "gh-bmetallica--electricity": 0.5,
+     "gh-bmetallica--neural_network_core": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--synthetic_essence": 0.1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "wall": "#cfd4db",
+     "roof": "#4e7091",
+     "accent": "#cb4d6f",
+     "seed": 1116110144
+    }
+   },
+   "buildTimeTicks": 1,
+   "workers": 0
+  },
+  {
+   "id": "gh-bmetallica--quantum_monolith",
+   "name": {
+    "de": "Quanten-Monolith",
+    "en": "Quantum Monolith"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--quantum_age",
+   "cost": {
+    "gh-bmetallica--quantum_matter": 100,
+    "gh-bmetallica--synthetic_essence": 100
+   },
+   "description": {
+    "de": "Ein monumentales Bauwerk, das die erste echte Singularität markiert. Ein Wunder der neuen Ära."
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--quantum_mainframe": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#ffffff",
+     "wall": "#e6ecf4",
+     "roof": "#43617e",
+     "seed": 3283722747
+    }
+   },
+   "buildTimeTicks": 1,
+   "workers": 0
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -2015,6 +2140,34 @@
    "icon": "⛰️"
   },
   {
+   "id": "gh-bmetallica--quantum_matter",
+   "name": {
+    "de": "Quantenmaterie",
+    "en": "Quantum Matter"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--quantum_age",
+   "baseValue": 500,
+   "description": {
+    "de": "Materie, die in einem Zustand permanenter Superposition existiert."
+   },
+   "icon": "🔷"
+  },
+  {
+   "id": "gh-bmetallica--synthetic_essence",
+   "name": {
+    "de": "Synthetische Essenz",
+    "en": "Synthetic Essence"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--quantum_age",
+   "baseValue": 800,
+   "description": {
+    "de": "Ein hochkomplexes biologisch-digitales Hybridgut."
+   },
+   "icon": "🔸"
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
    "name": {
     "de": "Muscheln",
@@ -2250,6 +2403,38 @@
     "name": {
      "de": "Quanten-Ingenieure",
      "en": "Quantum Engineers"
+    }
+   },
+   "needs": {
+    "gh-bmetallica--gh-idlevolution-demo--muscheln": 0.01
+   },
+   "advance": {
+    "resources": {
+     "gh-bmetallica--quantum_matter": 100,
+     "gh-bmetallica--synthetic_essence": 100
+    },
+    "buildings": {},
+    "population": 1200
+   }
+  },
+  {
+   "id": "gh-bmetallica--singularity_age",
+   "order": 9,
+   "name": {
+    "de": "Singularitäts-Ära",
+    "en": "Singularity Age"
+   },
+   "description": {
+    "de": "Die Menschheit transzendiert die physische Realität."
+   },
+   "modifiers": {
+    "productionMultiplier": 2.686200000000001,
+    "populationGrowth": 0.02
+   },
+   "tier": {
+    "name": {
+     "de": "Singularitäten-Architekten",
+     "en": "Singularity Architects"
     }
    },
    "needs": {
