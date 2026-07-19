@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-07-18T03:04:31.281Z",
+ "exportedAt": "2026-07-19T03:15:08.079Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -1716,6 +1716,166 @@
    "workers": 0
   },
   {
+   "id": "gh-bmetallica--education_academy",
+   "name": {
+    "de": "Bildungsakademie",
+    "en": "Education Academy"
+   },
+   "description": {
+    "de": "Ein Zentrum für Philosophie und Wissenschaft, das kulturelle Erbstücke erschafft."
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--quantum_age",
+   "icon": "🎓",
+   "cost": {
+    "gh-bmetallica--paper": 303,
+    "gh-bmetallica--bricks": 101
+   },
+   "buildTimeTicks": 300,
+   "workers": 5,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--paper": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--cultural_artifact": 0.053
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "sand"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#4a90e2",
+     "wall": "#e3e8f0",
+     "roof": "#527799",
+     "seed": 3823060720
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--paper_mill": 1
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--matter_collider",
+   "name": {
+    "de": "Materie-Collider",
+    "en": "Matter Collider"
+   },
+   "description": {
+    "de": "Eine gewaltige Anlage zur Manipulation der fundamentalen Bausteine der Realität."
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--quantum_age",
+   "icon": "⚛️",
+   "cost": {
+    "gh-bmetallica--quantum_processor": 50,
+    "gh-bmetallica--electricity": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 10,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--quantum_processor": 0.4,
+     "gh-bmetallica--electricity": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--quantum_matter": 0.1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#00ffcc",
+     "wall": "#dfe5ed",
+     "roof": "#466683",
+     "seed": 2030844653
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--quantum_lab": 1
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--cultural_monument",
+   "name": {
+    "de": "Kulturdenkmal",
+    "en": "Cultural Monument"
+   },
+   "description": {
+    "de": "Ein monumentales Bauwerk, das die Errungenschaften der Menschheit verewigt."
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--quantum_age",
+   "icon": "🏛️",
+   "cost": {
+    "gh-bmetallica--cultural_artifact": 50,
+    "gh-bmetallica--bricks": 100,
+    "gh-bmetallica--leather": 50,
+    "gh-bmetallica--synthetic_essence": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "production": null,
+   "storage": {
+    "*": 1000
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "sand"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 3,
+     "h": 3
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "fountain",
+     "accent": "#ffd700",
+     "wall": "#b4b9bf",
+     "roof": "#3f5b75",
+     "seed": 347154433
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--education_academy": 1
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -2168,6 +2328,20 @@
    "icon": "🔸"
   },
   {
+   "id": "gh-bmetallica--cultural_artifact",
+   "name": {
+    "de": "Kulturartefakt",
+    "en": "Cultural Artifact"
+   },
+   "description": {
+    "de": "Ein Symbol für den intellektuellen und kulturellen Fortschritt der Zivilisation."
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--quantum_age",
+   "baseValue": 1000,
+   "icon": "🔹"
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
    "name": {
     "de": "Muscheln",
@@ -2439,6 +2613,39 @@
    },
    "needs": {
     "gh-bmetallica--gh-idlevolution-demo--muscheln": 0.01
+   },
+   "advance": {
+    "resources": {
+     "gh-bmetallica--quantum_matter": 500,
+     "gh-bmetallica--synthetic_essence": 500
+    },
+    "buildings": {},
+    "population": 1500
+   }
+  },
+  {
+   "id": "gh-bmetallica--transcendence_age",
+   "order": 10,
+   "name": {
+    "de": "Transzendenz-Ära",
+    "en": "Transcendence Era"
+   },
+   "description": {
+    "de": "Die Grenzen zwischen Biologie, Technologie und Bewusstsein verschwimmen."
+   },
+   "modifiers": {
+    "productionMultiplier": 2.8,
+    "populationGrowth": 0.015
+   },
+   "tier": {
+    "name": {
+     "de": "Singularitäts-Wesen",
+     "en": "Singularity Beings"
+    }
+   },
+   "needs": {
+    "gh-bmetallica--cultural_artifact": 0.0024,
+    "gh-bmetallica--quantum_matter": 0.0001
    }
   }
  ]
