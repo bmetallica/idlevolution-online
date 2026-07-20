@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-07-19T03:15:08.079Z",
+ "exportedAt": "2026-07-20T03:04:09.092Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -1876,6 +1876,131 @@
    }
   },
   {
+   "id": "gh-bmetallica--bioreactor",
+   "name": {
+    "de": "Bioreaktor",
+    "en": "Bioreactor"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--singularity_age",
+   "cost": {
+    "gh-bmetallica--synthetic_essence": 20
+   },
+   "buildTimeTicks": 300,
+   "workers": 4,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--synthetic_essence": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--nutrient_paste": 0.5
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "accent": "#39ff14",
+     "wall": "#d2d7df",
+     "roof": "#425f7b",
+     "seed": 1840681293
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--molecular_farm",
+   "name": {
+    "de": "Molekularfarm",
+    "en": "Molecular Farm"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--singularity_age",
+   "cost": {
+    "gh-bmetallica--synthetic_essence": 20
+   },
+   "buildTimeTicks": 300,
+   "workers": 6,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--synthetic_essence": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--bio_protein": 0.5
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "farm",
+     "accent": "#00f2ff",
+     "wall": "#d9dee6",
+     "roof": "#405d78",
+     "seed": 1817364702
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--singularity_housing",
+   "name": {
+    "de": "Singularitäts-Wohnblock",
+    "en": "Singularity Housing Block"
+   },
+   "category": "housing",
+   "epoch": "gh-bmetallica--singularity_age",
+   "cost": {
+    "gh-bmetallica--bio_protein": 50,
+    "gh-bmetallica--microchip": 20
+   },
+   "buildTimeTicks": 400,
+   "workers": 0,
+   "housing": {
+    "capacity": 50
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 3,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#ffffff",
+     "wall": "#cbd0d8",
+     "roof": "#43617e",
+     "seed": 1725817272
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -2340,6 +2465,34 @@
    "epoch": "gh-bmetallica--quantum_age",
    "baseValue": 1000,
    "icon": "🔹"
+  },
+  {
+   "id": "gh-bmetallica--nutrient_paste",
+   "name": {
+    "de": "Nährpastete",
+    "en": "Nutrient Paste"
+   },
+   "category": "food",
+   "epoch": "gh-bmetallica--singularity_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Eine hochkonzentrierte, synthetische Nahrungsgrundlage für die Bewohner der Singularität."
+   },
+   "icon": "🧴"
+  },
+  {
+   "id": "gh-bmetallica--bio_protein",
+   "name": {
+    "de": "Bio-Protein",
+    "en": "Bio-Protein"
+   },
+   "category": "food",
+   "epoch": "gh-bmetallica--singularity_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Laborgezüchtete Proteine, die die traditionelle Landwirtschaft ablösen."
+   },
+   "icon": "🔗"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
