@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-07-20T03:04:09.092Z",
+ "exportedAt": "2026-07-22T03:04:04.474Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -2001,6 +2001,133 @@
    }
   },
   {
+   "id": "gh-bmetallica--prestige_bazaar",
+   "name": {
+    "de": "Prestige-Markt",
+    "en": "Prestige Bazaar"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--cultural_artifact": 100,
+    "gh-bmetallica--synthetic_essence": 50
+   },
+   "buildTimeTicks": 400,
+   "workers": 6,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--cultural_artifact": 0.5,
+     "gh-bmetallica--synthetic_essence": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--prestige_token": 0.2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "market",
+     "accent": "#ffd700",
+     "wall": "#dfe5ed",
+     "roof": "#466683",
+     "seed": 2285767406
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--archive_vault",
+   "name": {
+    "de": "Archivtresor",
+    "en": "Archive Vault"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--satellite_data": 100
+   },
+   "buildTimeTicks": 300,
+   "workers": 4,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--satellite_data": 0.8
+    },
+    "outputs": {
+     "gh-bmetallica--historical_record": 0.5
+    }
+   },
+   "placement": {
+    "terrain": [
+     "rock"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#808080",
+     "wall": "#cfd4db",
+     "roof": "#466683",
+     "seed": 2590597826
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--transcendence_villa",
+   "name": {
+    "de": "Transzendenz-Villa",
+    "en": "Transcendence Villa"
+   },
+   "category": "housing",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--prestige_token": 10,
+    "gh-bmetallica--historical_record": 5
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "housing": {
+    "capacity": 60
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "house",
+     "accent": "#e0ffff",
+     "wall": "#b4b9bf",
+     "roof": "#54799c",
+     "seed": 889261827
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -2493,6 +2620,34 @@
     "de": "Laborgezüchtete Proteine, die die traditionelle Landwirtschaft ablösen."
    },
    "icon": "🔗"
+  },
+  {
+   "id": "gh-bmetallica--prestige_token",
+   "name": {
+    "de": "Prestige-Token",
+    "en": "Prestige Token"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein symbolisches Gut, das den sozialen Status und den kulturellen Einfluss in der Ära der Transzendenz repräsentiert."
+   },
+   "icon": "⚓"
+  },
+  {
+   "id": "gh-bmetallica--historical_record",
+   "name": {
+    "de": "Historisches Archiv",
+    "en": "Historical Record"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Eine perfekt konservierte Rekonstruktion der Menschheitsgeschichte, extrahiert aus Satellitendaten."
+   },
+   "icon": "🪝"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
