@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-07-22T03:04:04.474Z",
+ "exportedAt": "2026-07-23T03:10:57.443Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -2128,6 +2128,123 @@
    }
   },
   {
+   "id": "gh-bmetallica--matter_refinery",
+   "name": {
+    "de": "Materierefinerie",
+    "en": "Matter Refinery"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--quantum_age",
+   "cost": {
+    "gh-bmetallica--quantum_matter": 100,
+    "gh-bmetallica--electricity": 50
+   },
+   "buildTimeTicks": 400,
+   "workers": 4,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--quantum_matter": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--stable_quantum_matter": 0.313
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "wall": "#e3e8f0",
+     "roof": "#3f5b75",
+     "accent": "#cb794d",
+     "seed": 2741643381
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--quantum_storage_hub",
+   "name": {
+    "de": "Quanten-Speicherzentrum",
+    "en": "Quantum Storage Hub"
+   },
+   "category": "storage",
+   "epoch": "gh-bmetallica--quantum_age",
+   "cost": {
+    "gh-bmetallica--stable_quantum_matter": 30,
+    "gh-bmetallica--electricity": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "storage": {
+    "gh-bmetallica--stable_quantum_matter": 1000,
+    "gh-bmetallica--quantum_matter": 1000
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    },
+    "adjacent": {
+     "rock": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "warehouse",
+     "wall": "#b4b9bf",
+     "roof": "#425f7b",
+     "accent": "#cb6f4d",
+     "seed": 305633536
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--quantum_cargo_terminal",
+   "name": {
+    "de": "Quanten-Frachtterminal",
+    "en": "Quantum Cargo Terminal"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--quantum_age",
+   "cost": {
+    "gh-bmetallica--stable_quantum_matter": 50,
+    "gh-bmetallica--software": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "placement": {
+    "terrain": [
+     "sand"
+    ],
+    "adjacent": {
+     "water": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "harbor",
+     "wall": "#d2d7df",
+     "roof": "#4b6c8b",
+     "accent": "#cb4d62",
+     "seed": 356068430
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -2409,7 +2526,7 @@
    "description": {
     "de": "Ein gefährliches, aber revolutionäres Gut der Alchemie."
    },
-   "icon": "💎"
+   "icon": "🔷"
   },
   {
    "id": "gh-bmetallica--coal",
@@ -2563,7 +2680,7 @@
    "description": {
     "de": "Materie, die in einem Zustand permanenter Superposition existiert."
    },
-   "icon": "🔷"
+   "icon": "🔸"
   },
   {
    "id": "gh-bmetallica--synthetic_essence",
@@ -2577,7 +2694,7 @@
    "description": {
     "de": "Ein hochkomplexes biologisch-digitales Hybridgut."
    },
-   "icon": "🔸"
+   "icon": "🔹"
   },
   {
    "id": "gh-bmetallica--cultural_artifact",
@@ -2591,7 +2708,7 @@
    "category": "luxury",
    "epoch": "gh-bmetallica--quantum_age",
    "baseValue": 1000,
-   "icon": "🔹"
+   "icon": "🧴"
   },
   {
    "id": "gh-bmetallica--nutrient_paste",
@@ -2605,7 +2722,7 @@
    "description": {
     "de": "Eine hochkonzentrierte, synthetische Nahrungsgrundlage für die Bewohner der Singularität."
    },
-   "icon": "🧴"
+   "icon": "🔗"
   },
   {
    "id": "gh-bmetallica--bio_protein",
@@ -2619,7 +2736,7 @@
    "description": {
     "de": "Laborgezüchtete Proteine, die die traditionelle Landwirtschaft ablösen."
    },
-   "icon": "🔗"
+   "icon": "⚓"
   },
   {
    "id": "gh-bmetallica--prestige_token",
@@ -2633,7 +2750,7 @@
    "description": {
     "de": "Ein symbolisches Gut, das den sozialen Status und den kulturellen Einfluss in der Ära der Transzendenz repräsentiert."
    },
-   "icon": "⚓"
+   "icon": "🪝"
   },
   {
    "id": "gh-bmetallica--historical_record",
@@ -2647,7 +2764,22 @@
    "description": {
     "de": "Eine perfekt konservierte Rekonstruktion der Menschheitsgeschichte, extrahiert aus Satellitendaten."
    },
-   "icon": "🪝"
+   "icon": "🧭"
+  },
+  {
+   "id": "gh-bmetallica--stable_quantum_matter",
+   "name": {
+    "de": "Stabile Quantenmaterie",
+    "en": "Stable Quantum Matter"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--quantum_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Hochgradig stabilisierte Materie für fortgeschrittene Quantenanwendungen.",
+    "en": "Highly stabilized matter for advanced quantum applications."
+   },
+   "icon": "💎"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
