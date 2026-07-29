@@ -4,7 +4,7 @@
  "name": "Insel von bmetallica",
  "epoch": "gh-bmetallica--quantum_age",
  "population": 1000,
- "exportedAt": "2026-07-23T03:10:57.440Z",
+ "exportedAt": "2026-07-29T13:13:28.574Z",
  "map": {
   "width": 93,
   "height": 96,
@@ -1999,6 +1999,11 @@
    "buildingId": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "x": 79,
    "y": 64
+  },
+  {
+   "buildingId": "gh-bmetallica--security_hub",
+   "x": 64,
+   "y": 63
   }
  ],
  "roads": [
