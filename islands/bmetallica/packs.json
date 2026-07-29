@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-07-23T03:10:57.443Z",
+ "exportedAt": "2026-07-29T13:13:28.577Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -2245,6 +2245,126 @@
    }
   },
   {
+   "id": "gh-bmetallica--neural_craft_studio",
+   "name": {
+    "de": "Neurales Handwerksstudio",
+    "en": "Neural Craft Studio"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--quantum_age",
+   "cost": {
+    "gh-bmetallica--neural_network_core": 20,
+    "gh-bmetallica--synthetic_essence": 10
+   },
+   "buildTimeTicks": 500,
+   "workers": 3,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--neural_network_core": 0.2,
+     "gh-bmetallica--synthetic_essence": 0.1
+    },
+    "outputs": {
+     "gh-bmetallica--neural_luxury_item": 0.05
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#a0f0ff",
+     "wall": "#e0e0e0",
+     "roof": "#404040",
+     "seed": 2409558006
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--quantum_plaza",
+   "name": {
+    "de": "Quantenplatz",
+    "en": "Quantum Plaza"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--quantum_age",
+   "cost": {
+    "gh-bmetallica--neural_luxury_item": 10,
+    "gh-bmetallica--cultural_artifact": 10
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 3
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "fountain",
+     "accent": "#ffffff",
+     "wall": "#cfd4db",
+     "roof": "#43617e",
+     "seed": 2534314439
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--quantum_residence",
+   "name": {
+    "de": "Quanten-Residenz",
+    "en": "Quantum Residence"
+   },
+   "category": "housing",
+   "epoch": "gh-bmetallica--quantum_age",
+   "cost": {
+    "gh-bmetallica--synthetic_essence": 20,
+    "gh-bmetallica--neural_luxury_item": 5
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "housing": {
+    "capacity": 15
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "house",
+     "accent": "#808080",
+     "wall": "#d5dbe2",
+     "roof": "#496a89",
+     "seed": 1408095185
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -2780,6 +2900,20 @@
     "en": "Highly stabilized matter for advanced quantum applications."
    },
    "icon": "💎"
+  },
+  {
+   "id": "gh-bmetallica--neural_luxury_item",
+   "name": {
+    "de": "Neuraler Luxusartikel",
+    "en": "Neural Luxury Item"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--quantum_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein exklusives Konsumgut, das direkt mit dem Nervensystem interagiert, um vollkommene Entspannung zu bieten."
+   },
+   "icon": "🔭"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
