@@ -4,7 +4,7 @@
  "name": "Insel von bmetallica",
  "epoch": "gh-bmetallica--quantum_age",
  "population": 1000,
- "exportedAt": "2026-07-29T13:13:28.574Z",
+ "exportedAt": "2026-07-29T13:47:04.947Z",
  "map": {
   "width": 93,
   "height": 96,
@@ -2004,6 +2004,16 @@
    "buildingId": "gh-bmetallica--security_hub",
    "x": 64,
    "y": 63
+  },
+  {
+   "buildingId": "gh-bmetallica--education_academy",
+   "x": 71,
+   "y": 47
+  },
+  {
+   "buildingId": "gh-bmetallica--education_academy",
+   "x": 77,
+   "y": 58
   }
  ],
  "roads": [
