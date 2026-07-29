@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-07-29T13:13:28.577Z",
+ "exportedAt": "2026-07-29T13:47:04.951Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -2245,6 +2245,100 @@
    }
   },
   {
+   "id": "gh-bmetallica--experience_exchange",
+   "name": {
+    "de": "Erlebnisbörse",
+    "en": "Experience Exchange"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--quantum_age",
+   "cost": {
+    "gh-bmetallica--quantum_processor": 40,
+    "gh-bmetallica--software": 40
+   },
+   "buildTimeTicks": 500,
+   "workers": 4,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--cultural_artifact": 0.2,
+     "gh-bmetallica--satellite_data": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--quantum_experience_token": 0.15
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "market",
+     "accent": "#00f2ff",
+     "wall": "#1a1a1a",
+     "roof": "#00f2ff",
+     "seed": 419070147
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--prestige_hub",
+   "name": {
+    "de": "Prestige-Zentrum",
+    "en": "Prestige Hub"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--prestige_token": 50,
+    "gh-bmetallica--quantum_experience_token": 20
+   },
+   "buildTimeTicks": 500,
+   "workers": 8,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--quantum_experience_token": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--prestige_token": 0.3
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--prestige_bazaar": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 3
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#ffd700",
+     "wall": "#ffffff",
+     "roof": "#ffd700",
+     "seed": 4040897068
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--neural_craft_studio",
    "name": {
     "de": "Neurales Handwerksstudio",
@@ -2900,6 +2994,20 @@
     "en": "Highly stabilized matter for advanced quantum applications."
    },
    "icon": "💎"
+  },
+  {
+   "id": "gh-bmetallica--quantum_experience_token",
+   "name": {
+    "de": "Quanten-Erlebnistoken",
+    "en": "Quantum Experience Token"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--quantum_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Digitale Zertifikate für exklusive Simulationen und virtuelle Events."
+   },
+   "icon": "🎟️"
   },
   {
    "id": "gh-bmetallica--neural_luxury_item",
