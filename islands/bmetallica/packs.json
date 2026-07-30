@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-07-29T13:47:04.951Z",
+ "exportedAt": "2026-07-30T03:01:48.075Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -2459,6 +2459,147 @@
    }
   },
   {
+   "id": "gh-bmetallica--logistics_nexus",
+   "name": {
+    "de": "Logistik-Nexus",
+    "en": "Logistics Nexus"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--software": 200,
+    "gh-bmetallica--quantum_processor": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 10,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--satellite_data": 0.5,
+     "gh-bmetallica--cyber_security_key": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--transcendence_data": 0.1
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--quantum_cargo_terminal": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#00f2ff",
+     "wall": "#1a1a1a",
+     "roof": "#00f2ff",
+     "seed": 3622513056
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--transcendence_hub",
+   "name": {
+    "de": "Transzendenz-Zentrum",
+    "en": "Transcendence Hub"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--transcendence_data": 50,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--transcendence_data": 0.4,
+     "gh-bmetallica--prestige_token": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--prestige_token": 0.5
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--prestige_hub": 1,
+     "gh-bmetallica--logistics_nexus": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 3,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#ffffff",
+     "wall": "#e0e0e0",
+     "roof": "#ffffff",
+     "seed": 1700843892
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--void_stabilizer",
+   "name": {
+    "de": "Leeren-Stabilisator",
+    "en": "Void Stabilizer"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--stable_quantum_matter": 150,
+    "gh-bmetallica--quantum_matter": 150
+   },
+   "buildTimeTicks": 500,
+   "workers": 8,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--quantum_matter": 0.8
+    },
+    "outputs": {
+     "gh-bmetallica--stable_quantum_matter": 0.5
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--matter_refinery": 2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "rock"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#7a00ff",
+     "wall": "#2a0044",
+     "roof": "#7a00ff",
+     "seed": 874264637
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -3022,6 +3163,20 @@
     "de": "Ein exklusives Konsumgut, das direkt mit dem Nervensystem interagiert, um vollkommene Entspannung zu bieten."
    },
    "icon": "🔭"
+  },
+  {
+   "id": "gh-bmetallica--transcendence_data",
+   "name": {
+    "de": "Transzendenz-Daten",
+    "en": "Transcendence Data"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Hochverdichtete Informationspakete, die das Bewusstsein über die physische Form hinaus tragen."
+   },
+   "icon": "💾"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
