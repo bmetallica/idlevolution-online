@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-07-30T03:01:48.075Z",
+ "exportedAt": "2026-07-31T03:01:23.155Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -2600,6 +2600,129 @@
    }
   },
   {
+   "id": "gh-bmetallica--void_sentinel",
+   "name": {
+    "de": "Leeren-Wächter",
+    "en": "Void Sentinel"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--stable_quantum_matter": 100,
+    "gh-bmetallica--transcendence_data": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--transcendence_data": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--entropy_shield": 0.1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#4a90e2",
+     "wall": "#1a1a1a",
+     "roof": "#000000",
+     "seed": 181344864
+    },
+    "military": {
+     "defense": 150
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "sand"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--existential_fortress",
+   "name": {
+    "de": "Existenz-Festung",
+    "en": "Existential Fortress"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--entropy_shield": 20,
+    "gh-bmetallica--prestige_token": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "placement": {
+    "terrain": [
+     "grass",
+     "rock"
+    ],
+    "size": {
+     "w": 3,
+     "h": 3
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#ffffff",
+     "wall": "#e3e8f0",
+     "roof": "#425f7b",
+     "seed": 2581690736
+    },
+    "military": {
+     "defense": 165
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--cosmic_archive_hub",
+   "name": {
+    "de": "Kosmisches Archiv-Zentrum",
+    "en": "Cosmic Archive Hub"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--historical_record": 200,
+    "gh-bmetallica--transcendence_data": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 10,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--historical_record": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--cultural_artifact": 0.2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "wall": "#dce2e9",
+     "roof": "#54799c",
+     "accent": "#cb954d",
+     "seed": 3402504034
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -3179,6 +3302,20 @@
    "icon": "💾"
   },
   {
+   "id": "gh-bmetallica--entropy_shield",
+   "name": {
+    "de": "Entropie-Schild",
+    "en": "Entropy Shield"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochfrequentes Schutzfeld, das die Integrität der Existenz gegen das Chaos des Vakuums sichert."
+   },
+   "icon": "🥼"
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
    "name": {
     "de": "Muscheln",
@@ -3483,6 +3620,44 @@
    "needs": {
     "gh-bmetallica--cultural_artifact": 0.0024,
     "gh-bmetallica--quantum_matter": 0.0001
+   },
+   "advance": {
+    "resources": {
+     "gh-bmetallica--entropy_shield": 50
+    },
+    "buildings": {
+     "gh-bmetallica--existential_fortress": 1
+    },
+    "population": 5000
+   }
+  },
+  {
+   "id": "gh-bmetallica--cosmic_order_age",
+   "order": 11,
+   "name": {
+    "de": "Kosmische Ordnung",
+    "en": "Cosmic Order"
+   },
+   "description": {
+    "de": "Die totale Kontrolle über die physikalischen Gesetze ermöglicht die Erschaffung einer stabilen, ewigen Realität."
+   },
+   "advance": {
+    "resources": {
+     "gh-bmetallica--entropy_shield": 50
+    }
+   },
+   "modifiers": {
+    "productionMultiplier": 3.08,
+    "populationGrowth": 0.025
+   },
+   "tier": {
+    "name": {
+     "de": "Kosmische Architekten",
+     "en": "Cosmic Architects"
+    }
+   },
+   "needs": {
+    "gh-bmetallica--gh-idlevolution-demo--muscheln": 0.01
    }
   }
  ]
