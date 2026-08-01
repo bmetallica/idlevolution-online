@@ -4,7 +4,7 @@
  "name": "Insel von bmetallica",
  "epoch": "gh-bmetallica--transcendence_age",
  "population": 1780,
- "exportedAt": "2026-07-31T03:01:23.151Z",
+ "exportedAt": "2026-08-01T03:01:16.594Z",
  "map": {
   "width": 93,
   "height": 96,
@@ -2644,6 +2644,161 @@
    "buildingId": "gh-bmetallica--education_academy",
    "x": 65,
    "y": 39
+  },
+  {
+   "buildingId": "gh-bmetallica--quantum_monolith",
+   "x": 45,
+   "y": 72
+  },
+  {
+   "buildingId": "gh-bmetallica--education_academy",
+   "x": 67,
+   "y": 39
+  },
+  {
+   "buildingId": "gh-bmetallica--education_academy",
+   "x": 69,
+   "y": 39
+  },
+  {
+   "buildingId": "gh-bmetallica--education_academy",
+   "x": 71,
+   "y": 39
+  },
+  {
+   "buildingId": "gh-bmetallica--education_academy",
+   "x": 73,
+   "y": 39
+  },
+  {
+   "buildingId": "gh-bmetallica--education_academy",
+   "x": 67,
+   "y": 41
+  },
+  {
+   "buildingId": "gh-bmetallica--education_academy",
+   "x": 69,
+   "y": 41
+  },
+  {
+   "buildingId": "gh-bmetallica--paper_mill",
+   "x": 70,
+   "y": 63
+  },
+  {
+   "buildingId": "gh-bmetallica--paper_mill",
+   "x": 72,
+   "y": 63
+  },
+  {
+   "buildingId": "gh-bmetallica--paper_mill",
+   "x": 74,
+   "y": 63
+  },
+  {
+   "buildingId": "gh-bmetallica--paper_mill",
+   "x": 70,
+   "y": 64
+  },
+  {
+   "buildingId": "gh-bmetallica--paper_mill",
+   "x": 72,
+   "y": 64
+  },
+  {
+   "buildingId": "gh-bmetallica--paper_mill",
+   "x": 74,
+   "y": 64
+  },
+  {
+   "buildingId": "gh-bmetallica--paper_mill",
+   "x": 70,
+   "y": 65
+  },
+  {
+   "buildingId": "gh-bmetallica--paper_mill",
+   "x": 72,
+   "y": 65
+  },
+  {
+   "buildingId": "gh-bmetallica--paper_mill",
+   "x": 74,
+   "y": 65
+  },
+  {
+   "buildingId": "gh-bmetallica--sheep_pen",
+   "x": 62,
+   "y": 64
+  },
+  {
+   "buildingId": "gh-bmetallica--sheep_pen",
+   "x": 63,
+   "y": 64
+  },
+  {
+   "buildingId": "gh-bmetallica--sheep_pen",
+   "x": 64,
+   "y": 64
+  },
+  {
+   "buildingId": "gh-bmetallica--weaver_hut",
+   "x": 62,
+   "y": 65
+  },
+  {
+   "buildingId": "gh-bmetallica--weaver_hut",
+   "x": 63,
+   "y": 65
+  },
+  {
+   "buildingId": "gh-bmetallica--weaver_hut",
+   "x": 64,
+   "y": 65
+  },
+  {
+   "buildingId": "gh-bmetallica--weaver_hut",
+   "x": 62,
+   "y": 66
+  },
+  {
+   "buildingId": "gh-bmetallica--weaver_hut",
+   "x": 63,
+   "y": 66
+  },
+  {
+   "buildingId": "gh-bmetallica--weaver_hut",
+   "x": 64,
+   "y": 66
+  },
+  {
+   "buildingId": "gh-bmetallica--education_academy",
+   "x": 71,
+   "y": 41
+  },
+  {
+   "buildingId": "gh-bmetallica--education_academy",
+   "x": 73,
+   "y": 41
+  },
+  {
+   "buildingId": "gh-bmetallica--education_academy",
+   "x": 65,
+   "y": 41
+  },
+  {
+   "buildingId": "gh-bmetallica--education_academy",
+   "x": 63,
+   "y": 41
+  },
+  {
+   "buildingId": "gh-bmetallica--education_academy",
+   "x": 63,
+   "y": 43
+  },
+  {
+   "buildingId": "gh-bmetallica--education_academy",
+   "x": 65,
+   "y": 43
   }
  ],
  "roads": [
