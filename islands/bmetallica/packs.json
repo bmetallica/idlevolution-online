@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-07-31T03:01:23.155Z",
+ "exportedAt": "2026-08-01T03:01:16.602Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -2723,6 +2723,92 @@
    }
   },
   {
+   "id": "gh-bmetallica--anomaly_harvester",
+   "name": {
+    "de": "Anomalie-Ernter",
+    "en": "Anomaly Harvester"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--entropy_shield": 10,
+    "gh-bmetallica--transcendence_data": 20
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--entropy_shield": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--paradox_fragment": 0.05
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "rock"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "gatherer",
+     "accent": "#a020f0",
+     "wall": "#2e0854",
+     "roof": "#4b0082",
+     "seed": 4096307731
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--curiosity_shrine",
+   "name": {
+    "de": "Schrein der Neugier",
+    "en": "Shrine of Curiosity"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--paradox_fragment": 5,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 5,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--paradox_fragment": 0.1
+    },
+    "outputs": {
+     "gh-bmetallica--cultural_artifact": 0.225
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 3
+    },
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#ffd700",
+     "wall": "#b4b9bf",
+     "roof": "#405d78",
+     "seed": 2254452868
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -3314,6 +3400,20 @@
     "de": "Ein hochfrequentes Schutzfeld, das die Integrität der Existenz gegen das Chaos des Vakuums sichert."
    },
    "icon": "🥼"
+  },
+  {
+   "id": "gh-bmetallica--paradox_fragment",
+   "name": {
+    "de": "Paradoxon-Fragment",
+    "en": "Paradox Fragment"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein Stück Materie, das gleichzeitig existiert und nicht existiert. Hochgradig instabil."
+   },
+   "icon": "🌀"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
