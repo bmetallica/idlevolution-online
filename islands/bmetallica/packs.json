@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-02T03:01:16.666Z",
+ "exportedAt": "2026-08-03T03:01:25.508Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -2895,6 +2895,134 @@
    }
   },
   {
+   "id": "gh-bmetallica--resonance_distiller",
+   "name": {
+    "de": "Resonanz-Destille",
+    "en": "Resonance Distiller"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--cosmic_resonance": 30,
+    "gh-bmetallica--synthetic_essence": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 8,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--cosmic_resonance": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--cosmic_nectar": 0.3
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#a855f7",
+     "wall": "#2e1065",
+     "roof": "#7e22ce",
+     "seed": 4248264248
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--celestial_nourishment_hub",
+   "name": {
+    "de": "Himmlischer Nährstoff-Hub",
+    "en": "Celestial Nourishment Hub"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--cosmic_nectar": 40,
+    "gh-bmetallica--prestige_token": 20
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--cosmic_nectar": 0.6
+    },
+    "outputs": {
+     "gh-bmetallica--bio_protein": 0.5
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "water": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#fbbf24",
+     "wall": "#fef3c7",
+     "roof": "#d97706",
+     "seed": 3060363190
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--cosmic_order_outpost",
+   "name": {
+    "de": "Kosmischer Ordnungsposten",
+    "en": "Cosmic Order Outpost"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--cosmic_order_age",
+   "cost": {
+    "gh-bmetallica--entropy_shield": 50,
+    "gh-bmetallica--cosmic_resonance": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 5,
+   "production": {
+    "inputs": {},
+    "outputs": {}
+   },
+   "storage": {
+    "gh-bmetallica--cosmic_resonance": 100
+   },
+   "placement": {
+    "terrain": [
+     "rock"
+    ],
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#ffffff",
+     "wall": "#cbd5e1",
+     "roof": "#475569",
+     "seed": 3786052745
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -3514,6 +3642,20 @@
     "de": "Eine harmonische Schwingung, die aus der Synchronisation von Paradoxon-Fragmenten und kulturellen Artefakten entsteht."
    },
    "icon": "✨"
+  },
+  {
+   "id": "gh-bmetallica--cosmic_nectar",
+   "name": {
+    "de": "Kosmischer Nektar",
+    "en": "Cosmic Nectar"
+   },
+   "category": "food",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Eine hochverdichtete, energetische Flüssigkeit, gewonnen aus der Resonanz der Leere."
+   },
+   "icon": "🧪"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
