@@ -3,8 +3,8 @@
  "owner": "bmetallica",
  "name": "Insel von bmetallica",
  "epoch": "gh-bmetallica--transcendence_age",
- "population": 1780,
- "exportedAt": "2026-08-03T03:01:25.505Z",
+ "population": 2580,
+ "exportedAt": "2026-08-04T03:01:18.529Z",
  "map": {
   "width": 93,
   "height": 96,
@@ -1203,7 +1203,7 @@
   {
    "buildingId": "harbor",
    "x": 50,
-   "y": 16
+   "y": 14
   },
   {
    "buildingId": "gh-bmetallica--armor_workshop",
@@ -2895,6 +2895,256 @@
    "buildingId": "gh-bmetallica--void_sentinel",
    "x": 82,
    "y": 58
+  },
+  {
+   "buildingId": "gh-bmetallica--logistics_nexus",
+   "x": 80,
+   "y": 58
+  },
+  {
+   "buildingId": "gh-bmetallica--logistics_nexus",
+   "x": 75,
+   "y": 51
+  },
+  {
+   "buildingId": "gh-bmetallica--prestige_bazaar",
+   "x": 48,
+   "y": 20
+  },
+  {
+   "buildingId": "gh-bmetallica--server_farm",
+   "x": 81,
+   "y": 56
+  },
+  {
+   "buildingId": "gh-bmetallica--education_academy",
+   "x": 75,
+   "y": 33
+  },
+  {
+   "buildingId": "gh-bmetallica--education_academy",
+   "x": 73,
+   "y": 33
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 39,
+   "y": 20
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 39,
+   "y": 19
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 39,
+   "y": 18
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 39,
+   "y": 17
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 40,
+   "y": 20
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 40,
+   "y": 19
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 40,
+   "y": 18
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 40,
+   "y": 17
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 41,
+   "y": 20
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 41,
+   "y": 19
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 41,
+   "y": 18
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 41,
+   "y": 17
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 42,
+   "y": 20
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 42,
+   "y": 19
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 42,
+   "y": 18
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 42,
+   "y": 17
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 43,
+   "y": 20
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 43,
+   "y": 19
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 43,
+   "y": 18
+  },
+  {
+   "buildingId": "gh-bmetallica--manor_house",
+   "x": 43,
+   "y": 17
+  },
+  {
+   "buildingId": "fisher_hut",
+   "x": 20,
+   "y": 26
+  },
+  {
+   "buildingId": "fisher_hut",
+   "x": 20,
+   "y": 27
+  },
+  {
+   "buildingId": "fisher_hut",
+   "x": 20,
+   "y": 25
+  },
+  {
+   "buildingId": "fisher_hut",
+   "x": 20,
+   "y": 24
+  },
+  {
+   "buildingId": "fisher_hut",
+   "x": 20,
+   "y": 28
+  },
+  {
+   "buildingId": "fisher_hut",
+   "x": 19,
+   "y": 29
+  },
+  {
+   "buildingId": "fisher_hut",
+   "x": 18,
+   "y": 30
+  },
+  {
+   "buildingId": "gh-bmetallica--archive_vault",
+   "x": 69,
+   "y": 31
+  },
+  {
+   "buildingId": "gh-bmetallica--server_farm",
+   "x": 55,
+   "y": 19
+  },
+  {
+   "buildingId": "gh-bmetallica--power_plant",
+   "x": 18,
+   "y": 55
+  },
+  {
+   "buildingId": "gh-bmetallica--power_plant",
+   "x": 18,
+   "y": 53
+  },
+  {
+   "buildingId": "gh-bmetallica--power_plant",
+   "x": 18,
+   "y": 51
+  },
+  {
+   "buildingId": "gh-bmetallica--power_plant",
+   "x": 18,
+   "y": 49
+  },
+  {
+   "buildingId": "gh-bmetallica--coal_mine",
+   "x": 71,
+   "y": 31
+  },
+  {
+   "buildingId": "gh-bmetallica--coal_mine",
+   "x": 71,
+   "y": 30
+  },
+  {
+   "buildingId": "gh-bmetallica--coal_mine",
+   "x": 71,
+   "y": 29
+  },
+  {
+   "buildingId": "gh-bmetallica--engine_factory",
+   "x": 47,
+   "y": 68
+  },
+  {
+   "buildingId": "gh-bmetallica--engine_factory",
+   "x": 49,
+   "y": 68
+  },
+  {
+   "buildingId": "gh-bmetallica--engine_factory",
+   "x": 47,
+   "y": 70
+  },
+  {
+   "buildingId": "gh-bmetallica--engine_factory",
+   "x": 49,
+   "y": 70
+  },
+  {
+   "buildingId": "gh-bmetallica--server_farm",
+   "x": 58,
+   "y": 19
+  },
+  {
+   "buildingId": "gh-bmetallica--server_farm",
+   "x": 52,
+   "y": 17
+  },
+  {
+   "buildingId": "gh-bmetallica--cosmic_archive_hub",
+   "x": 85,
+   "y": 46
+  },
+  {
+   "buildingId": "gh-bmetallica--cosmic_archive_hub",
+   "x": 86,
+   "y": 46
   }
  ],
  "roads": [
@@ -3410,6 +3660,10 @@
   "72,60",
   "71,60",
   "70,60",
-  "69,60"
+  "69,60",
+  "50,16",
+  "50,15",
+  "51,15",
+  "51,16"
  ]
 }
