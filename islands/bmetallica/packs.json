@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-03T03:01:25.508Z",
+ "exportedAt": "2026-08-04T03:01:18.533Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -3023,6 +3023,98 @@
    }
   },
   {
+   "id": "gh-bmetallica--paradox_refinery",
+   "name": {
+    "de": "Paradoxon-Raffinerie",
+    "en": "Paradox Refinery"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--paradox_fragment": 20,
+    "gh-bmetallica--cosmic_resonance": 10
+   },
+   "buildTimeTicks": 500,
+   "workers": 10,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--paradox_fragment": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--refined_paradox_essence": 0.2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "rock"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#7b2cbf",
+     "wall": "#3c096c",
+     "roof": "#10002b",
+     "seed": 1176657271
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--artifact_forge",
+   "name": {
+    "de": "Artefakt-Schmiede",
+    "en": "Artifact Forge"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--refined_paradox_essence": 30,
+    "gh-bmetallica--prestige_token": 20
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--refined_paradox_essence": 0.5,
+     "gh-bmetallica--cultural_artifact": 0.3
+    },
+    "outputs": {
+     "gh-bmetallica--cultural_artifact": 0.6
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--paradox_refinery": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "accent": "#ff00ff",
+     "wall": "#240046",
+     "roof": "#5a189a",
+     "seed": 3212828371
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -3656,6 +3748,20 @@
     "de": "Eine hochverdichtete, energetische Flüssigkeit, gewonnen aus der Resonanz der Leere."
    },
    "icon": "🧪"
+  },
+  {
+   "id": "gh-bmetallica--refined_paradox_essence",
+   "name": {
+    "de": "Verfeinerte Paradoxon-Essenz",
+    "en": "Refined Paradox Essence"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Eine hochkonzentrierte Form von Paradoxon-Fragmenten, die zur Stabilisierung kultureller Manifestationen benötigt wird."
+   },
+   "icon": "⏳"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
