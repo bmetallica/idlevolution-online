@@ -4,7 +4,7 @@
  "name": "Insel von bmetallica",
  "epoch": "gh-bmetallica--transcendence_age",
  "population": 2580,
- "exportedAt": "2026-08-04T03:01:18.529Z",
+ "exportedAt": "2026-08-05T03:01:23.873Z",
  "map": {
   "width": 93,
   "height": 96,
@@ -3145,6 +3145,26 @@
    "buildingId": "gh-bmetallica--cosmic_archive_hub",
    "x": 86,
    "y": 46
+  },
+  {
+   "buildingId": "gh-bmetallica--cosmic_archive_hub",
+   "x": 86,
+   "y": 47
+  },
+  {
+   "buildingId": "gh-bmetallica--cosmic_archive_hub",
+   "x": 85,
+   "y": 47
+  },
+  {
+   "buildingId": "gh-bmetallica--cosmic_archive_hub",
+   "x": 86,
+   "y": 48
+  },
+  {
+   "buildingId": "gh-bmetallica--cosmic_archive_hub",
+   "x": 85,
+   "y": 48
   }
  ],
  "roads": [

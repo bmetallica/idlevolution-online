@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-04T03:01:18.533Z",
+ "exportedAt": "2026-08-05T03:01:23.877Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -3115,6 +3115,134 @@
    }
   },
   {
+   "id": "gh-bmetallica--sensory_distillery",
+   "name": {
+    "de": "Sensorik-Destille",
+    "en": "Sensory Distillery"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--cosmic_nectar": 30,
+    "gh-bmetallica--prestige_token": 10
+   },
+   "buildTimeTicks": 500,
+   "workers": 8,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--cosmic_nectar": 0.5,
+     "gh-bmetallica--prestige_token": 0.1
+    },
+    "outputs": {
+     "gh-bmetallica--sensory_essence": 0.3
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#e0aaff",
+     "wall": "#2d1b4d",
+     "roof": "#4b0082",
+     "seed": 2351251544
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--luxury_exchange_hub",
+   "name": {
+    "de": "Luxus-Austausch-Zentrum",
+    "en": "Luxury Exchange Hub"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--sensory_essence": 20,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--sensory_essence": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--prestige_token": 0.556
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 3
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "market",
+     "accent": "#ffd700",
+     "wall": "#ffffff",
+     "roof": "#ffd700",
+     "seed": 3344878404
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--sensory_luxury_shrine",
+   "name": {
+    "de": "Schrein der Sinne",
+    "en": "Shrine of Senses"
+   },
+   "category": "housing",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--sensory_essence": 40,
+    "gh-bmetallica--historical_record": 20
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "housing": {
+    "capacity": 100
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#ff00ff",
+     "wall": "#f0f0f0",
+     "roof": "#ff00ff",
+     "seed": 706706576
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -3762,6 +3890,20 @@
     "de": "Eine hochkonzentrierte Form von Paradoxon-Fragmenten, die zur Stabilisierung kultureller Manifestationen benötigt wird."
    },
    "icon": "⏳"
+  },
+  {
+   "id": "gh-bmetallica--sensory_essence",
+   "name": {
+    "de": "Sensorische Essenz",
+    "en": "Sensory Essence"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Eine hochkonzentrierte Form von Sinneswahrnehmung, die für die höchste Stufe des Komforts benötigt wird."
+   },
+   "icon": "🪙"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
