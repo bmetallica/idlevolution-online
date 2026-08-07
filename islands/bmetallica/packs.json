@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-06T03:01:18.118Z",
+ "exportedAt": "2026-08-07T03:01:21.946Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -3340,6 +3340,116 @@
    }
   },
   {
+   "id": "gh-bmetallica--void_shield_generator",
+   "name": {
+    "de": "Leeren-Schild-Generator",
+    "en": "Void Shield Generator"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--entropy_shield": 50,
+    "gh-bmetallica--transcendence_data": 30
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--entropy_shield": 0.4,
+     "gh-bmetallica--transcendence_data": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--void_shield_battery": 0.15
+    }
+   },
+   "storage": {
+    "gh-bmetallica--void_shield_battery": 100
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--existential_fortress": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "rock"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#4a00e0",
+     "wall": "#1a1a1a",
+     "roof": "#00d2ff",
+     "seed": 1925899151
+    },
+    "military": {
+     "defense": 150
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--paradox_defense_array",
+   "name": {
+    "de": "Paradoxon-Verteidigungs-Array",
+    "en": "Paradox Defense Array"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--refined_paradox_essence": 40,
+    "gh-bmetallica--void_shield_battery": 10
+   },
+   "buildTimeTicks": 500,
+   "workers": 20,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--refined_paradox_essence": 0.5,
+     "gh-bmetallica--void_shield_battery": 0.2
+    },
+    "outputs": {
+     "soldiers": 0.5
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--void_shield_generator": 1
+    },
+    "resources": {
+     "gh-bmetallica--paradox_fragment": 20
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 3,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#ff00cc",
+     "wall": "#2d0036",
+     "roof": "#000000",
+     "seed": 3295525215
+    },
+    "military": {
+     "defense": 165
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -4015,6 +4125,20 @@
     "de": "Ein hochkomplexer Kern zur Aufrechterhaltung der strukturellen Integrität in instabilen Raum-Zeit-Gefügen."
    },
    "icon": "🧲"
+  },
+  {
+   "id": "gh-bmetallica--void_shield_battery",
+   "name": {
+    "de": "Leeren-Schild-Batterie",
+    "en": "Void Shield Battery"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Hochkonzentrierte Energieeinheiten zur Stabilisierung von Verteidigungsfeldern."
+   },
+   "icon": "🔋"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
