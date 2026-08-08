@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-07T03:01:21.946Z",
+ "exportedAt": "2026-08-08T03:01:19.595Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -3450,6 +3450,140 @@
    }
   },
   {
+   "id": "gh-bmetallica--anomaly_collector",
+   "name": {
+    "de": "Anomalie-Sammler",
+    "en": "Anomaly Collector"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--entropy_shield": 50,
+    "gh-bmetallica--transcendence_data": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 8,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--entropy_shield": 0.3,
+     "gh-bmetallica--transcendence_data": 0.3
+    },
+    "outputs": {
+     "gh-bmetallica--causal_anomaly": 0.1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "rock"
+    ],
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "gatherer",
+     "accent": "#a020f0",
+     "wall": "#2e0854",
+     "roof": "#4b0082",
+     "seed": 2113409346
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--curiosity_museum",
+   "name": {
+    "de": "Museum der Kuriositäten",
+    "en": "Museum of Curiosities"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--causal_anomaly": 5,
+    "gh-bmetallica--prestige_token": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--causal_anomaly": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--cultural_artifact": 0.395
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--curiosity_shrine": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#ffd700",
+     "wall": "#ffffff",
+     "roof": "#c0c0c0",
+     "seed": 3694601783
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--paradox_defense_outpost",
+   "name": {
+    "de": "Paradoxon-Verteidigungsposten",
+    "en": "Paradox Defense Outpost"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "soldiers": 50,
+    "gh-bmetallica--void_shield_battery": 20
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "production": {
+    "inputs": {},
+    "outputs": {}
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--paradox_defense_array": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "rock"
+    ],
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "military": {
+     "defense": 120
+    },
+    "art": {
+     "wall": "#d2d7df",
+     "roof": "#425f7b",
+     "accent": "#cb564d",
+     "seed": 2060183884
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -4139,6 +4273,20 @@
     "de": "Hochkonzentrierte Energieeinheiten zur Stabilisierung von Verteidigungsfeldern."
    },
    "icon": "🔋"
+  },
+  {
+   "id": "gh-bmetallica--causal_anomaly",
+   "name": {
+    "de": "Kausale Anomalie",
+    "en": "Causal Anomaly"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein Objekt, das die Gesetze von Ursache und Wirkung ignoriert."
+   },
+   "icon": "💰"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
