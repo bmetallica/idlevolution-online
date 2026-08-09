@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-08T03:01:19.595Z",
+ "exportedAt": "2026-08-09T03:01:18.729Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -3584,6 +3584,131 @@
    }
   },
   {
+   "id": "gh-bmetallica--echo_weaver_hall",
+   "name": {
+    "de": "Halle der Echo-Weber",
+    "en": "Echo Weaver Hall"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--cultural_artifact": 50,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--cultural_artifact": 0.4,
+     "gh-bmetallica--cosmic_resonance": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--existential_echo": 0.15
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#a29bfe",
+     "wall": "#dfe6e9",
+     "roof": "#6c5ce7",
+     "seed": 2697147709
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--echo_contemplation_shrine",
+   "name": {
+    "de": "Schrein der Kontemplation",
+    "en": "Contemplation Shrine"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--existential_echo": 10,
+    "gh-bmetallica--prestige_token": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "housing": {
+    "capacity": 100
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--echo_weaver_hall": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "water": 1
+    },
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "fountain",
+     "accent": "#fab1a0",
+     "wall": "#ffffff",
+     "roof": "#ff7675",
+     "seed": 956545846
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--paradox_defense_bastion",
+   "name": {
+    "de": "Paradoxon-Bastion",
+    "en": "Paradox Bastion"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--void_shield_battery": 50,
+    "soldiers": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 20,
+   "meta": {
+    "military": {
+     "defense": 165
+    },
+    "art": {
+     "wall": "#d9dee6",
+     "roof": "#456480",
+     "accent": "#4dc7cb",
+     "seed": 1046583902
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "sand"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -4287,6 +4412,20 @@
     "de": "Ein Objekt, das die Gesetze von Ursache und Wirkung ignoriert."
    },
    "icon": "💰"
+  },
+  {
+   "id": "gh-bmetallica--existential_echo",
+   "name": {
+    "de": "Existentieller Nachhall",
+    "en": "Existential Echo"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein sanftes Schwingen der Realität, das die Essenz des Seins widerspiegelt."
+   },
+   "icon": "🎐"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
