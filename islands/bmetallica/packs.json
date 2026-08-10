@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-09T03:01:18.729Z",
+ "exportedAt": "2026-08-10T03:01:16.348Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -3709,6 +3709,97 @@
    }
   },
   {
+   "id": "gh-bmetallica--celestial_distillery",
+   "name": {
+    "de": "Himmlische Destille",
+    "en": "Celestial Distillery"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--cosmic_nectar": 50,
+    "gh-bmetallica--prestige_token": 20
+   },
+   "buildTimeTicks": 500,
+   "workers": 10,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--cosmic_nectar": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--celestial_essence": 0.2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "water": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#e0b0ff",
+     "wall": "#4a4e69",
+     "roof": "#22223b",
+     "seed": 1847887261
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--transcendence_banquet_hall",
+   "name": {
+    "de": "Transzendenz-Bankett",
+    "en": "Transcendence Banquet"
+   },
+   "category": "housing",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--celestial_essence": 30,
+    "gh-bmetallica--bio_protein": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "housing": {
+    "capacity": 100
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--transcendence_villa": 1
+    },
+    "resources": {
+     "gh-bmetallica--celestial_essence": 10
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 3
+    },
+    "size": {
+     "w": 3,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#ffd700",
+     "wall": "#ffffff",
+     "roof": "#ffd700",
+     "seed": 2521997437
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -4426,6 +4517,20 @@
     "de": "Ein sanftes Schwingen der Realität, das die Essenz des Seins widerspiegelt."
    },
    "icon": "🎐"
+  },
+  {
+   "id": "gh-bmetallica--celestial_essence",
+   "name": {
+    "de": "Himmlische Essenz",
+    "en": "Celestial Essence"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Eine hochkonzentrierte Form von Lebensenergie, extrahiert aus dem Nektar der Sterne."
+   },
+   "icon": "📿"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
