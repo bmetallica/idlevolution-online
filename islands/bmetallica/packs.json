@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-10T03:01:16.348Z",
+ "exportedAt": "2026-08-11T03:01:21.399Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -3800,6 +3800,139 @@
    }
   },
   {
+   "id": "gh-bmetallica--existence_anchor_station",
+   "name": {
+    "de": "Existenz-Ankerstation",
+    "en": "Existence Anchor Station"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--entropy_shield": 100,
+    "gh-bmetallica--stable_quantum_matter": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--entropy_shield": 0.5,
+     "gh-bmetallica--stable_quantum_matter": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--stabilized_existence_core": 0.1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#4a90e2",
+     "wall": "#2c3e50",
+     "roof": "#34495e",
+     "seed": 3822791442
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--existence_stabilization_hub",
+   "name": {
+    "de": "Existenz-Stabilisierungs-Hub",
+    "en": "Existence Stabilization Hub"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--stabilized_existence_core": 10,
+    "gh-bmetallica--prestige_token": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 20,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--stabilized_existence_core": 0.2
+    },
+    "outputs": {
+     "soldiers": 1
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--existence_anchor_station": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#00ffcc",
+     "wall": "#cbd0d8",
+     "roof": "#4f7294",
+     "seed": 807873983
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--armor_depot",
+   "name": {
+    "de": "Rüstungsdepot",
+    "en": "Armor Depot"
+   },
+   "category": "storage",
+   "epoch": "gh-bmetallica--iron_age",
+   "cost": {
+    "gh-bmetallica--iron_bar": 50,
+    "stone": 50
+   },
+   "buildTimeTicks": 400,
+   "workers": 2,
+   "storage": {
+    "gh-bmetallica--armor": 500
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "warehouse",
+     "wall": "#aba497",
+     "roof": "#98493b",
+     "accent": "#8ecb4d",
+     "seed": 1692001169
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -4531,6 +4664,20 @@
     "de": "Eine hochkonzentrierte Form von Lebensenergie, extrahiert aus dem Nektar der Sterne."
    },
    "icon": "📿"
+  },
+  {
+   "id": "gh-bmetallica--stabilized_existence_core",
+   "name": {
+    "de": "Stabilisierter Existenzkern",
+    "en": "Stabilized Existence Core"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochverdichteter Kern, der die Realität lokal gegen den Zerfall sichert."
+   },
+   "icon": "🧿"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
