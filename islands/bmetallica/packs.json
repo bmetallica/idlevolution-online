@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-13T04:06:15.696Z",
+ "exportedAt": "2026-08-14T03:01:23.661Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -4066,6 +4066,150 @@
    }
   },
   {
+   "id": "gh-bmetallica--tactical_defense_nexus",
+   "name": {
+    "de": "Taktischer Verteidigungs-Nexus",
+    "en": "Tactical Defense Nexus"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "soldiers": 200,
+    "gh-bmetallica--armor": 150,
+    "gh-bmetallica--void_shield_battery": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "soldiers": 0.5,
+     "gh-bmetallica--armor": 0.5,
+     "gh-bmetallica--void_shield_battery": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--defense_protocol_core": 0.1
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--existential_fortress": 1
+    },
+    "resources": {
+     "soldiers": 100
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#4a90e2",
+     "wall": "#2c3e50",
+     "roof": "#34495e",
+     "seed": 1579153135
+    },
+    "military": {
+     "defense": 150
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--armaments_integration_center",
+   "name": {
+    "de": "Rüstungsintegrationszentrum",
+    "en": "Armaments Integration Center"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--steel": 300,
+    "gh-bmetallica--engine_part": 100,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--steel": 0.8,
+     "gh-bmetallica--engine_part": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--armor": 0.6
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--blacksmith": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#7f8c8d",
+     "wall": "#c1c6cd",
+     "roof": "#425f7b",
+     "seed": 3262298400
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--munitions_refinery",
+   "name": {
+    "de": "Munitions-Raffinerie",
+    "en": "Munitions Refinery"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--coal": 200,
+    "stone": 100
+   },
+   "buildTimeTicks": 450,
+   "workers": 8,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--coal": 1
+    },
+    "outputs": {
+     "gh-bmetallica--gunpowder": 0.5
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "accent": "#e67e22",
+     "wall": "#c5cad0",
+     "roof": "#456480",
+     "seed": 329685546
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -4825,6 +4969,20 @@
     "de": "Ein hochverdichteter Kern aus reiner Sinneswahrnehmung."
    },
    "icon": "🪬"
+  },
+  {
+   "id": "gh-bmetallica--defense_protocol_core",
+   "name": {
+    "de": "Verteidigungsprotokoll-Kern",
+    "en": "Defense Protocol Core"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochkomplexer Rechenkern, der die Verteidigungsstrategien der Siedlung in Echtzeit optimiert."
+   },
+   "icon": "🗿"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
