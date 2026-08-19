@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-18T04:05:52.906Z",
+ "exportedAt": "2026-08-19T03:01:26.266Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -4210,6 +4210,138 @@
    }
   },
   {
+   "id": "gh-bmetallica--leather_refinery",
+   "name": {
+    "de": "Leder-Veredelung",
+    "en": "Leather Refinery"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--leather": 20
+   },
+   "buildTimeTicks": 400,
+   "workers": 6,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--leather": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--refined_leather": 0.3
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#8b4513",
+     "wall": "#d2b48c",
+     "roof": "#5d4037",
+     "seed": 52556083
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--ceremonial_armory",
+   "name": {
+    "de": "Zeremonielle Rüstungsschmiede",
+    "en": "Ceremonial Armory"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--refined_leather": 30,
+    "gh-bmetallica--steel": 50,
+    "gh-bmetallica--prestige_token": 20
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--refined_leather": 0.4,
+     "gh-bmetallica--steel": 0.6
+    },
+    "outputs": {
+     "gh-bmetallica--ceremonial_armor": 0.2
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--blacksmith": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "accent": "#ffd700",
+     "wall": "#f5f5f5",
+     "roof": "#2f4f4f",
+     "seed": 2674257763
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--gunpowder_depot",
+   "name": {
+    "de": "Schwarzpulver-Depot",
+    "en": "Gunpowder Depot"
+   },
+   "category": "storage",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--gunpowder": 50,
+    "stone": 100
+   },
+   "buildTimeTicks": 300,
+   "workers": 2,
+   "production": {},
+   "storage": {
+    "gh-bmetallica--gunpowder": 500
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "sand"
+    ],
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "warehouse",
+     "wall": "#b4b9bf",
+     "roof": "#517596",
+     "accent": "#4dcbbd",
+     "seed": 3423303173
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -4983,6 +5115,34 @@
     "de": "Ein hochkomplexer Rechenkern, der die Verteidigungsstrategien der Siedlung in Echtzeit optimiert."
    },
    "icon": "🗿"
+  },
+  {
+   "id": "gh-bmetallica--refined_leather",
+   "name": {
+    "de": "Veredeltes Leder",
+    "en": "Refined Leather"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 40,
+   "description": {
+    "de": "Hochwertig verarbeitetes Leder für die Ausrüstung von Wesenheiten höherer Ordnung."
+   },
+   "icon": "👞"
+  },
+  {
+   "id": "gh-bmetallica--ceremonial_armor",
+   "name": {
+    "de": "Zeremonielle Rüstung",
+    "en": "Ceremonial Armor"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Eine Rüstung, die nicht nur schützt, sondern den Status des Trägers in der kosmischen Hierarchie manifestiert."
+   },
+   "icon": "🎗️"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
