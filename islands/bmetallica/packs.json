@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-19T03:01:26.266Z",
+ "exportedAt": "2026-08-20T03:01:24.454Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -4342,6 +4342,126 @@
    }
   },
   {
+   "id": "gh-bmetallica--ceremonial_supply_hub",
+   "name": {
+    "de": "Zeremonielle Versorgungshalle",
+    "en": "Ceremonial Supply Hall"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--ceremonial_armor": 20,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 8,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--ceremonial_armor": 0.4,
+     "gh-bmetallica--prestige_token": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--ceremonial_supply_kit": 0.3
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "warehouse",
+     "accent": "#e0c3fc",
+     "wall": "#4a148c",
+     "roof": "#7b1fa2",
+     "seed": 1810672790
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--ceremonial_ritual_center",
+   "name": {
+    "de": "Zeremonielles Ritualzentrum",
+    "en": "Ceremonial Ritual Center"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--ceremonial_supply_kit": 30,
+    "gh-bmetallica--prestige_token": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--ceremonial_supply_hub": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 3
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#ffd700",
+     "wall": "#ffffff",
+     "roof": "#ffd700",
+     "seed": 958503166
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--defense_protocol_depot",
+   "name": {
+    "de": "Protokoll-Depot",
+    "en": "Protocol Depot"
+   },
+   "category": "storage",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--defense_protocol_core": 15,
+    "stone": 200
+   },
+   "buildTimeTicks": 400,
+   "workers": 3,
+   "storage": {
+    "gh-bmetallica--defense_protocol_core": 500
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "rock"
+    ],
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "warehouse",
+     "accent": "#00e5ff",
+     "wall": "#263238",
+     "roof": "#00b8d4",
+     "seed": 3766917813
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -5143,6 +5263,20 @@
     "de": "Eine Rüstung, die nicht nur schützt, sondern den Status des Trägers in der kosmischen Hierarchie manifestiert."
    },
    "icon": "🎗️"
+  },
+  {
+   "id": "gh-bmetallica--ceremonial_supply_kit",
+   "name": {
+    "de": "Zeremonielle Versorgungskits",
+    "en": "Ceremonial Supply Kits"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Hochwertige Pakete, die für die Aufrechterhaltung der zeremoniellen Ordnung notwendig sind."
+   },
+   "icon": "📦"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
