@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-20T03:01:24.454Z",
+ "exportedAt": "2026-08-21T03:01:29.779Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -4462,6 +4462,132 @@
    }
   },
   {
+   "id": "gh-bmetallica--void_stabilization_factory",
+   "name": {
+    "de": "Leeren-Stabilisierungsfabrik",
+    "en": "Void Stabilization Factory"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--entropy_shield": 40,
+    "gh-bmetallica--transcendence_data": 40
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--entropy_shield": 0.5,
+     "gh-bmetallica--transcendence_data": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--void_stabilization_module": 0.2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#4a90e2",
+     "wall": "#2c3e50",
+     "roof": "#34495e",
+     "seed": 4100021242
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--cosmic_order_refinery",
+   "name": {
+    "de": "Kosmische Ordnungs-Raffinerie",
+    "en": "Cosmic Order Refinery"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--cosmic_order_age",
+   "cost": {
+    "gh-bmetallica--order_stabilizer_core": 50,
+    "gh-bmetallica--void_stabilization_module": 10
+   },
+   "buildTimeTicks": 500,
+   "workers": 20,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--order_stabilizer_core": 0.4,
+     "gh-bmetallica--void_stabilization_module": 0.3
+    },
+    "outputs": {
+     "gh-bmetallica--cosmic_order_essence": 0.15
+    }
+   },
+   "placement": {
+    "terrain": [
+     "rock"
+    ],
+    "adjacent": {
+     "water": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "accent": "#f1c40f",
+     "wall": "#ecf0f1",
+     "roof": "#bdc3c7",
+     "seed": 4076509469
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--ceremonial_supply_vault",
+   "name": {
+    "de": "Zeremonielle Versorgungskammer",
+    "en": "Ceremonial Supply Vault"
+   },
+   "category": "storage",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--ceremonial_supply_kit": 50,
+    "stone": 200
+   },
+   "buildTimeTicks": 400,
+   "workers": 2,
+   "storage": {
+    "gh-bmetallica--ceremonial_supply_kit": 500
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "warehouse",
+     "wall": "#bec3c9",
+     "roof": "#54799c",
+     "accent": "#4dcb82",
+     "seed": 2131080985
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -5277,6 +5403,34 @@
     "de": "Hochwertige Pakete, die für die Aufrechterhaltung der zeremoniellen Ordnung notwendig sind."
    },
    "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--void_stabilization_module",
+   "name": {
+    "de": "Leeren-Stabilisierungsmodul",
+    "en": "Void Stabilization Module"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochkomplexes Bauteil zur Aufrechterhaltung der lokalen Realitätsstruktur."
+   },
+   "icon": "🏆"
+  },
+  {
+   "id": "gh-bmetallica--cosmic_order_essence",
+   "name": {
+    "de": "Kosmische Ordnungsesenz",
+    "en": "Cosmic Order Essence"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--cosmic_order_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Die reinste Form der Ordnung, extrahiert aus den stabilsten Bereichen des Multiversums."
+   },
+   "icon": "🪞"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
