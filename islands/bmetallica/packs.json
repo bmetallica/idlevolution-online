@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-21T03:01:29.779Z",
+ "exportedAt": "2026-08-22T03:01:26.268Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -4588,6 +4588,137 @@
    }
   },
   {
+   "id": "gh-bmetallica--anomaly_refinement_center",
+   "name": {
+    "de": "Anomalie-Veredelungszentrum",
+    "en": "Anomaly Refinement Center"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--causal_anomaly": 20,
+    "gh-bmetallica--paradox_fragment": 10
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--causal_anomaly": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--anomaly_residue": 0.3
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "rock"
+    ],
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#a855f7",
+     "wall": "#2e1065",
+     "roof": "#4c1d95",
+     "seed": 1851680606
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--order_catalyst_forge",
+   "name": {
+    "de": "Ordnungskatalysator-Schmiede",
+    "en": "Order Catalyst Forge"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--cosmic_order_age",
+   "cost": {
+    "gh-bmetallica--cosmic_order_essence": 40,
+    "gh-bmetallica--anomaly_residue": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 18,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--cosmic_order_essence": 0.4,
+     "gh-bmetallica--anomaly_residue": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--cosmic_order_catalyst": 0.15
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--cosmic_order_refinery": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "rock"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "accent": "#fbbf24",
+     "wall": "#451a03",
+     "roof": "#78350f",
+     "seed": 1583108743
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--brick_masonry_hub",
+   "name": {
+    "de": "Ziegel-Verarbeitungshub",
+    "en": "Brick Processing Hub"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--medieval_age",
+   "cost": {
+    "stone": 145,
+    "gh-bmetallica--clay": 73
+   },
+   "buildTimeTicks": 300,
+   "workers": 5,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--clay": 0.8,
+     "stone": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--bricks": 0.307
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#b91c1c",
+     "wall": "#f87171",
+     "roof": "#7f1d1d",
+     "seed": 3832737250
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -5431,6 +5562,34 @@
     "de": "Die reinste Form der Ordnung, extrahiert aus den stabilsten Bereichen des Multiversums."
    },
    "icon": "🪞"
+  },
+  {
+   "id": "gh-bmetallica--anomaly_residue",
+   "name": {
+    "de": "Anomalie-Rückstand",
+    "en": "Anomaly Residue"
+   },
+   "category": "raw",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 500,
+   "description": {
+    "de": "Ein instabiler Abfallstoff, der bei der Ernte von Anomalien zurückbleibt."
+   },
+   "icon": "🔮"
+  },
+  {
+   "id": "gh-bmetallica--cosmic_order_catalyst",
+   "name": {
+    "de": "Kosmischer Ordnungskatalysator",
+    "en": "Cosmic Order Catalyst"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--cosmic_order_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochreines Substrat, das die Umwandlung von Essenz in Ordnung beschleunigt."
+   },
+   "icon": "📦"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
