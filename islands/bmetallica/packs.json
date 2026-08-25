@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-24T04:06:28.667Z",
+ "exportedAt": "2026-08-25T03:01:27.316Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -4818,6 +4818,127 @@
    }
   },
   {
+   "id": "gh-bmetallica--ceremonial_supply_integrator",
+   "name": {
+    "de": "Zeremonial-Integrator",
+    "en": "Ceremonial Integrator"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--ceremonial_supply_kit": 40,
+    "gh-bmetallica--gunpowder": 50
+   },
+   "buildTimeTicks": 450,
+   "workers": 10,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--ceremonial_supply_kit": 0.5,
+     "gh-bmetallica--gunpowder": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--refined_ceremonial_kit": 0.2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#e67e22",
+     "wall": "#34495e",
+     "roof": "#2c3e50",
+     "seed": 4202554074
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--celestial_vault_depot",
+   "name": {
+    "de": "Himmlischer Tresor",
+    "en": "Celestial Vault Depot"
+   },
+   "category": "storage",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--celestial_essence": 50,
+    "stone": 200
+   },
+   "buildTimeTicks": 300,
+   "workers": 4,
+   "storage": {
+    "gh-bmetallica--celestial_essence": 500,
+    "gh-bmetallica--refined_ceremonial_kit": 200
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "rock"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "warehouse",
+     "accent": "#f1c40f",
+     "wall": "#ecf0f1",
+     "roof": "#95a5a6",
+     "seed": 2674235955
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--neural_luxury_conduit",
+   "name": {
+    "de": "Neuraler Luxus-Leiter",
+    "en": "Neural Luxury Conduit"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--neural_luxury_item": 30,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--neural_luxury_item": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--celestial_essence": 0.1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "fountain",
+     "accent": "#9b59b6",
+     "wall": "#ffffff",
+     "roof": "#8e44ad",
+     "seed": 1465104607
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -5703,6 +5824,20 @@
     "de": "Ein hochverdichteter Kern aus reiner Bedeutung, der die kollektive Existenz stabilisiert."
    },
    "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--refined_ceremonial_kit",
+   "name": {
+    "de": "Veredeltes Zeremonialkit",
+    "en": "Refined Ceremonial Kit"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochgradig optimiertes Versorgungspaket für die transzendenten Eliten."
+   },
+   "icon": "🍷"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
