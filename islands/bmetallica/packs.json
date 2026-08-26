@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-25T03:01:27.316Z",
+ "exportedAt": "2026-08-26T03:02:56.291Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -4939,6 +4939,145 @@
    }
   },
   {
+   "id": "gh-bmetallica--essence_refinement_hub",
+   "name": {
+    "de": "Essenz-Veredelungshub",
+    "en": "Essence Refinement Hub"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--celestial_essence": 40,
+    "gh-bmetallica--sensory_essence": 40
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--celestial_essence": 0.5,
+     "gh-bmetallica--sensory_essence": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--essence_stabilizer_fluid": 0.3
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#a855f7",
+     "wall": "#4c1d95",
+     "roof": "#7e22ce",
+     "seed": 3044535455
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--cosmic_order_forge",
+   "name": {
+    "de": "Kosmische Ordnungs-Schmiede",
+    "en": "Cosmic Order Forge"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--cosmic_order_age",
+   "cost": {
+    "gh-bmetallica--essence_stabilizer_fluid": 30,
+    "gh-bmetallica--cosmic_order_catalyst": 10
+   },
+   "buildTimeTicks": 500,
+   "workers": 18,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--essence_stabilizer_fluid": 0.6,
+     "gh-bmetallica--cosmic_order_catalyst": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--existential_resonance_core": 0.2
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--order_catalyst_forge": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "rock"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "accent": "#fbbf24",
+     "wall": "#451a03",
+     "roof": "#78350f",
+     "seed": 775331288
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--celestial_vault_integrator",
+   "name": {
+    "de": "Himmlischer Tresor-Integrator",
+    "en": "Celestial Vault Integrator"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--celestial_essence": 60,
+    "gh-bmetallica--bricks": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 10,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--celestial_essence": 0.8
+    },
+    "outputs": {
+     "gh-bmetallica--defense_protocol_core": 0.2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "warehouse",
+     "accent": "#38bdf8",
+     "wall": "#0c4a6e",
+     "roof": "#075985",
+     "seed": 858035158
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -5838,6 +5977,20 @@
     "de": "Ein hochgradig optimiertes Versorgungspaket für die transzendenten Eliten."
    },
    "icon": "🍷"
+  },
+  {
+   "id": "gh-bmetallica--essence_stabilizer_fluid",
+   "name": {
+    "de": "Essenz-Stabilisator-Flüssigkeit",
+    "en": "Essence Stabilizer Fluid"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 800,
+   "description": {
+    "de": "Eine hochkonzentrierte Flüssigkeit, die benötigt wird, um instabile kosmische Güter in feste Strukturen zu überführen."
+   },
+   "icon": "📦"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
