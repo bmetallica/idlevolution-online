@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-27T03:01:31.297Z",
+ "exportedAt": "2026-08-28T03:01:25.535Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -5218,6 +5218,155 @@
    }
   },
   {
+   "id": "gh-bmetallica--resonance_stabilization_node",
+   "name": {
+    "de": "Resonanz-Stabilisierungs-Knoten",
+    "en": "Resonance Stabilization Node"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--existence_resonance_stabilizer": 10,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--existence_resonance_stabilizer": 0.4,
+     "gh-bmetallica--cosmic_resonance": 0.3
+    },
+    "outputs": {
+     "gh-bmetallica--resonance_stabilizer_fluid": 0.2
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--existence_resonance_integrator": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "fountain",
+     "accent": "#4facfe",
+     "wall": "#e0e0e0",
+     "roof": "#ffffff",
+     "seed": 4055391240
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--existence_anchor_fortress",
+   "name": {
+    "de": "Existenz-Anker-Festung",
+    "en": "Existence Anchor Fortress"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--stabilized_existence_core": 30,
+    "gh-bmetallica--defense_protocol_core": 15
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "production": {
+    "inputs": {},
+    "outputs": {}
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--existential_fortress": 1,
+     "gh-bmetallica--existence_anchor_station": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "rock"
+    ],
+    "adjacent": {
+     "rock": 2
+    },
+    "size": {
+     "w": 3,
+     "h": 3
+    }
+   },
+   "meta": {
+    "military": {
+     "defense": 165
+    },
+    "art": {
+     "wall": "#cfd4db",
+     "roof": "#486886",
+     "accent": "#c34dcb",
+     "seed": 3722451776
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--brick_masonry_hub_expansion",
+   "name": {
+    "de": "Ziegel-Struktur-Zentrum",
+    "en": "Brick Structure Center"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--medieval_age",
+   "cost": {
+    "stone": 163,
+    "gh-bmetallica--clay": 109
+   },
+   "buildTimeTicks": 400,
+   "workers": 5,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--clay": 0.5,
+     "stone": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--bricks": 0.367
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--brick_masonry_hub": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "wall": "#b5b0a8",
+     "roof": "#6f492b",
+     "accent": "#cb4d4d",
+     "seed": 495601920
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -6143,6 +6292,20 @@
    "baseValue": 1000,
    "description": {
     "de": "Ein hochkomplexes Modul zur Harmonisierung von Resonanzkernen und kulturellen Artefakten."
+   },
+   "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--resonance_stabilizer_fluid",
+   "name": {
+    "de": "Resonanz-Stabilisator-Flüssigkeit",
+    "en": "Resonance Stabilizer Fluid"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Eine hochviskose Flüssigkeit, die Schwingungen in der Existenz dämpft."
    },
    "icon": "📦"
   },
