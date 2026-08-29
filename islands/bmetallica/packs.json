@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-28T03:01:25.535Z",
+ "exportedAt": "2026-08-29T03:01:25.944Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -5367,6 +5367,139 @@
    }
   },
   {
+   "id": "gh-bmetallica--resonance_stabilization_hub",
+   "name": {
+    "de": "Resonanz-Stabilisierungs-Zentrum",
+    "en": "Resonance Stabilization Hub"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--resonance_stabilizer_fluid": 40,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--resonance_stabilizer_fluid": 0.6
+    },
+    "outputs": {
+     "gh-bmetallica--resonance_stabilization_fluid_refined": 0.3
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#4a90e2",
+     "wall": "#d1d1d1",
+     "roof": "#2c3e50",
+     "seed": 54041147
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--brick_masonry_industrial_complex",
+   "name": {
+    "de": "Industrieller Ziegelkomplex",
+    "en": "Industrial Brick Complex"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--industrial_age",
+   "cost": {
+    "gh-bmetallica--coal": 150,
+    "stone": 150
+   },
+   "buildTimeTicks": 450,
+   "workers": 10,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--clay": 0.8,
+     "gh-bmetallica--coal": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--bricks": 0.437
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "accent": "#e67e22",
+     "wall": "#7f8c8d",
+     "roof": "#c0392b",
+     "seed": 1650942627
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--muschel_veredelungs_station",
+   "name": {
+    "de": "Muschel-Veredelungsstation",
+    "en": "Shell Refinement Station"
+   },
+   "category": "production",
+   "epoch": "stone_age",
+   "cost": {
+    "stone": 50,
+    "wood": 50
+   },
+   "buildTimeTicks": 300,
+   "workers": 4,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--gh-idlevolution-demo--muscheln": 0.5
+    },
+    "outputs": {
+     "food": 0.5
+    }
+   },
+   "placement": {
+    "terrain": [
+     "sand"
+    ],
+    "adjacent": {
+     "water": 1
+    },
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "gatherer",
+     "accent": "#f1c40f",
+     "wall": "#ecf0f1",
+     "roof": "#bdc3c7",
+     "seed": 2986918230
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -6306,6 +6439,20 @@
    "baseValue": 1000,
    "description": {
     "de": "Eine hochviskose Flüssigkeit, die Schwingungen in der Existenz dämpft."
+   },
+   "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--resonance_stabilization_fluid_refined",
+   "name": {
+    "de": "Gereinigte Resonanzflüssigkeit",
+    "en": "Refined Resonance Fluid"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Eine hochreine Form der Resonanzflüssigkeit, die für die Stabilisierung von Raum-Zeit-Gefügen unerlässlich ist."
    },
    "icon": "📦"
   },
