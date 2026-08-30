@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-29T03:01:25.944Z",
+ "exportedAt": "2026-08-30T03:01:20.107Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -5500,6 +5500,129 @@
    }
   },
   {
+   "id": "gh-bmetallica--resonance_stabilization_hub_expansion",
+   "name": {
+    "de": "Resonanz-Stabilisierungs-Zentrum",
+    "en": "Resonance Stabilization Center"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--resonance_stabilization_fluid_refined": 40,
+    "gh-bmetallica--prestige_token": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--resonance_stabilization_fluid_refined": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--structural_resonance_core": 0.2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#4a90e2",
+     "wall": "#e0e0e0",
+     "roof": "#2c3e50",
+     "seed": 59665385
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--monumental_brick_foundry",
+   "name": {
+    "de": "Monumentale Ziegelgussstätte",
+    "en": "Monumental Brick Foundry"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "stone": 500,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 10,
+   "production": {
+    "inputs": {
+     "stone": 1.5
+    },
+    "outputs": {
+     "gh-bmetallica--bricks": 1.2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "rock"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "accent": "#d35400",
+     "wall": "#7f8c8d",
+     "roof": "#c0392b",
+     "seed": 3328699329
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--cosmic_foundation_monument",
+   "name": {
+    "de": "Kosmisches Fundament-Monument",
+    "en": "Cosmic Foundation Monument"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--bricks": 500,
+    "gh-bmetallica--structural_resonance_core": 20
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "production": {
+    "inputs": {},
+    "outputs": {}
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 3,
+     "h": 3
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#f1c40f",
+     "wall": "#ecf0f1",
+     "roof": "#f39c12",
+     "seed": 3384281771
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -6453,6 +6576,20 @@
    "baseValue": 1000,
    "description": {
     "de": "Eine hochreine Form der Resonanzflüssigkeit, die für die Stabilisierung von Raum-Zeit-Gefügen unerlässlich ist."
+   },
+   "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--structural_resonance_core",
+   "name": {
+    "de": "Struktur-Resonanzkern",
+    "en": "Structural Resonance Core"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochverdichteter Kern, der die Schwingungen der Realität nutzt, um physische Materie zu stabilisieren."
    },
    "icon": "📦"
   },
