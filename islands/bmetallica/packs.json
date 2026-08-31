@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-08-30T03:01:20.107Z",
+ "exportedAt": "2026-08-31T03:01:13.936Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -5623,6 +5623,101 @@
    }
   },
   {
+   "id": "gh-bmetallica--foundation_stabilizer_hub",
+   "name": {
+    "de": "Fundament-Stabilisator",
+    "en": "Foundation Stabilizer"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--structural_resonance_core": 40,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--structural_resonance_core": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--stabilized_foundation_core": 0.3
+    }
+   },
+   "storage": {
+    "gh-bmetallica--stabilized_foundation_core": 500
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#4a90e2",
+     "wall": "#d1d1d1",
+     "roof": "#2c3e50",
+     "seed": 603527532
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--cosmic_foundation_integrator",
+   "name": {
+    "de": "Kosmischer Fundament-Integrator",
+    "en": "Cosmic Foundation Integrator"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--stabilized_foundation_core": 30,
+    "gh-bmetallica--bricks": 200
+   },
+   "buildTimeTicks": 500,
+   "workers": 20,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--stabilized_foundation_core": 0.4,
+     "gh-bmetallica--bricks": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--structural_resonance_core": 0.2
+    }
+   },
+   "storage": {
+    "gh-bmetallica--structural_resonance_core": 300
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 3,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "accent": "#f39c12",
+     "wall": "#7f8c8d",
+     "roof": "#34495e",
+     "seed": 2340042311
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -6590,6 +6685,20 @@
    "baseValue": 1000,
    "description": {
     "de": "Ein hochverdichteter Kern, der die Schwingungen der Realität nutzt, um physische Materie zu stabilisieren."
+   },
+   "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--stabilized_foundation_core",
+   "name": {
+    "de": "Stabilisierter Fundamentkern",
+    "en": "Stabilized Foundation Core"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochverdichteter Kern aus Resonanzmaterialien, der dazu dient, monumentale Strukturen gegen die Entropie zu sichern."
    },
    "icon": "📦"
   },
