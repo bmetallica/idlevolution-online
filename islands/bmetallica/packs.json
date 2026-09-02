@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-01T03:01:15.894Z",
+ "exportedAt": "2026-09-02T03:01:13.799Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -6713,6 +6713,20 @@
    "baseValue": 800,
    "description": {
     "de": "Eine hochreine Flüssigkeit, die dazu dient, die Fluktuationen der Existenz zu glätten."
+   },
+   "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--existence_stabilizer_fluid_refined",
+   "name": {
+    "de": "Gereinigte Existenz-Stabilisator-Flüssigkeit",
+    "en": "Refined Existence Stabilizer Fluid"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Eine hochkonzentrierte, stabilisierte Form des Existenz-Stabilisators, bereit für die Integration in komplexe Strukturen."
    },
    "icon": "📦"
   },
