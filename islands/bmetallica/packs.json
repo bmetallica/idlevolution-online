@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-06T03:01:12.220Z",
+ "exportedAt": "2026-09-07T03:01:15.608Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -5714,6 +5714,100 @@
      "wall": "#7f8c8d",
      "roof": "#34495e",
      "seed": 2340042311
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--existence_stabilizer_distillery",
+   "name": {
+    "de": "Existenz-Stabilisator-Destille",
+    "en": "Existence Stabilizer Distillery"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--prestige_token": 50,
+    "gh-bmetallica--stable_quantum_matter": 20
+   },
+   "buildTimeTicks": 500,
+   "workers": 10,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--stable_quantum_matter": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--existence_stabilizer_fluid": 0.3
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#4a90e2",
+     "wall": "#d1d1d1",
+     "roof": "#2c3e50",
+     "seed": 884875573
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--existence_resonance_integrator_hub",
+   "name": {
+    "de": "Resonanz-Integrations-Hub",
+    "en": "Resonance Integration Hub"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--existence_stabilizer_fluid": 30,
+    "gh-bmetallica--prestige_token": 40
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--existence_stabilizer_fluid": 0.5,
+     "gh-bmetallica--existence_stabilizer_fluid_refined": 0.1
+    },
+    "outputs": {
+     "gh-bmetallica--existence_stabilizer_fluid_refined": 0.4
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--existence_stabilizer_distillery": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#ffffff",
+     "wall": "#34495e",
+     "roof": "#7f8c8d",
+     "seed": 1834372804
     }
    }
   },
