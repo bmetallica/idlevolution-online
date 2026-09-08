@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-07T03:01:15.608Z",
+ "exportedAt": "2026-09-08T03:01:13.646Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -5812,6 +5812,101 @@
    }
   },
   {
+   "id": "gh-bmetallica--existence_essence_extractor",
+   "name": {
+    "de": "Existenz-Essenz-Extraktor",
+    "en": "Existence Essence Extractor"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--existence_stabilizer_fluid": 40,
+    "gh-bmetallica--prestige_token": 30
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--existence_stabilizer_fluid": 0.6
+    },
+    "outputs": {
+     "gh-bmetallica--existence_stabilizer_essence": 0.3
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#4a90e2",
+     "wall": "#e0e0e0",
+     "roof": "#2c3e50",
+     "seed": 411060037
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--cosmic_order_precursor_forge",
+   "name": {
+    "de": "Kosmische Vorläufer-Schmiede",
+    "en": "Cosmic Precursor Forge"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--existence_stabilizer_essence": 20,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 18,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--existence_stabilizer_essence": 0.5,
+     "gh-bmetallica--anomaly_residue": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--cosmic_order_catalyst": 0.1
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--existence_essence_extractor": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "rock"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "accent": "#f39c12",
+     "wall": "#34495e",
+     "roof": "#7f8c8d",
+     "seed": 3306352972
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -6821,6 +6916,20 @@
    "baseValue": 1000,
    "description": {
     "de": "Eine hochkonzentrierte, stabilisierte Form des Existenz-Stabilisators, bereit für die Integration in komplexe Strukturen."
+   },
+   "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--existence_stabilizer_essence",
+   "name": {
+    "de": "Existenz-Stabilisator-Essenz",
+    "en": "Existence Stabilizer Essence"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Eine hochkonzentrierte Form der Stabilisierungsflüssigkeit, bereit für die Integration in die kosmische Ordnung."
    },
    "icon": "📦"
   },
