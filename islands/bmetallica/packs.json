@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-08T03:01:13.646Z",
+ "exportedAt": "2026-09-09T03:01:25.157Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -5907,6 +5907,99 @@
    }
   },
   {
+   "id": "gh-bmetallica--nectar_distillation_chamber",
+   "name": {
+    "de": "Nektar-Destillationskammer",
+    "en": "Nectar Distillation Chamber"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--cosmic_nectar": 50,
+    "gh-bmetallica--prestige_token": 30
+   },
+   "buildTimeTicks": 500,
+   "workers": 10,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--cosmic_nectar": 0.6
+    },
+    "outputs": {
+     "gh-bmetallica--transcendental_nectar": 0.3
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#e6ccff",
+     "wall": "#4a4a4a",
+     "roof": "#ffffff",
+     "seed": 2352785572
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--sensory_exchange_pavilion",
+   "name": {
+    "de": "Sensorik-Austausch-Pavillon",
+    "en": "Sensory Exchange Pavilion"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--transcendental_nectar": 20,
+    "gh-bmetallica--prestige_token": 80
+   },
+   "buildTimeTicks": 500,
+   "workers": 6,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--transcendental_nectar": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--prestige_token": 0.4
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--nectar_distillation_chamber": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "fountain",
+     "accent": "#ffcc00",
+     "wall": "#ffffff",
+     "roof": "#ffd700",
+     "seed": 2492907583
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -6932,6 +7025,20 @@
     "de": "Eine hochkonzentrierte Form der Stabilisierungsflüssigkeit, bereit für die Integration in die kosmische Ordnung."
    },
    "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--transcendental_nectar",
+   "name": {
+    "de": "Transzendentaler Nektar",
+    "en": "Transcendental Nectar"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochkonzentriertes, ästhetisches Elixier, das aus kosmischen Resonanzen destilliert wird."
+   },
+   "icon": "🍯"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
