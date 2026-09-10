@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-09T03:01:25.157Z",
+ "exportedAt": "2026-09-10T03:01:15.212Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -6000,6 +6000,89 @@
    }
   },
   {
+   "id": "gh-bmetallica--distribution_nexus_hub",
+   "name": {
+    "de": "Distributions-Nexus",
+    "en": "Distribution Nexus"
+   },
+   "category": "storage",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--transcendence_data": 150,
+    "gh-bmetallica--order_stabilizer_core": 20
+   },
+   "buildTimeTicks": 500,
+   "workers": 6,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--transcendence_data": 0.4,
+     "gh-bmetallica--order_stabilizer_core": 0.1
+    },
+    "outputs": {
+     "gh-bmetallica--logistics_buffer_core": 0.2
+    }
+   },
+   "storage": {
+    "gh-bmetallica--logistics_buffer_core": 500
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "warehouse",
+     "accent": "#4a90e2",
+     "wall": "#f0f0f0",
+     "roof": "#2c3e50",
+     "seed": 2742225411
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--supply_chain_stabilizer",
+   "name": {
+    "de": "Lieferketten-Stabilisator",
+    "en": "Supply Chain Stabilizer"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--logistics_buffer_core": 30,
+    "gh-bmetallica--prestige_token": 80
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--distribution_nexus_hub": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#e67e22",
+     "wall": "#ecf0f1",
+     "roof": "#34495e",
+     "seed": 3595836724
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -7039,6 +7122,20 @@
     "de": "Ein hochkonzentriertes, ästhetisches Elixier, das aus kosmischen Resonanzen destilliert wird."
    },
    "icon": "🍯"
+  },
+  {
+   "id": "gh-bmetallica--logistics_buffer_core",
+   "name": {
+    "de": "Logistik-Pufferkern",
+    "en": "Logistics Buffer Core"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 850,
+   "description": {
+    "de": "Ein hochverdichteter Kern zur Stabilisierung von Warenströmen in der transzendenten Ebene."
+   },
+   "icon": "📦"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
