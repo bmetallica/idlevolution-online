@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-10T03:01:15.212Z",
+ "exportedAt": "2026-09-11T03:03:31.707Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -6083,6 +6083,91 @@
    }
   },
   {
+   "id": "gh-bmetallica--logistics_buffer_refinery",
+   "name": {
+    "de": "Logistik-Puffer-Raffinerie",
+    "en": "Logistics Buffer Refinery"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--logistics_buffer_core": 40,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--logistics_buffer_core": 0.8
+    },
+    "outputs": {
+     "gh-bmetallica--logistics_buffer_core_refined": 0.4
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#4a90e2",
+     "wall": "#d1d1d1",
+     "roof": "#2c3e50",
+     "seed": 1044977084
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--logistics_stability_bastion",
+   "name": {
+    "de": "Logistik-Stabilitäts-Bastion",
+    "en": "Logistics Stability Bastion"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--logistics_buffer_core_refined": 20,
+    "gh-bmetallica--defense_protocol_core": 10
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--logistics_buffer_refinery": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 3
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "wall": "#b4b9bf",
+     "roof": "#517596",
+     "accent": "#cb4d71",
+     "seed": 2953698823
+    },
+    "military": {
+     "defense": 150
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -7134,6 +7219,20 @@
    "baseValue": 850,
    "description": {
     "de": "Ein hochverdichteter Kern zur Stabilisierung von Warenströmen in der transzendenten Ebene."
+   },
+   "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--logistics_buffer_core_refined",
+   "name": {
+    "de": "Gereinigter Logistik-Pufferkern",
+    "en": "Refined Logistics Buffer Core"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochgradig stabilisierter Kern, der für die extremen Anforderungen der nächsten Ära optimiert wurde."
    },
    "icon": "📦"
   },
