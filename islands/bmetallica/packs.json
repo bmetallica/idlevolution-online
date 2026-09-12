@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-11T03:03:31.707Z",
+ "exportedAt": "2026-09-12T03:01:16.817Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -6168,6 +6168,88 @@
    }
   },
   {
+   "id": "gh-bmetallica--logistics_stability_integrator",
+   "name": {
+    "de": "Logistik-Stabilitäts-Integrator",
+    "en": "Logistics Stability Integrator"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--logistics_buffer_core_refined": 40,
+    "gh-bmetallica--prestige_token": 80
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--logistics_buffer_core_refined": 0.6
+    },
+    "outputs": {
+     "gh-bmetallica--optimized_logistics_flow": 0.2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "warehouse",
+     "accent": "#4a90e2",
+     "wall": "#d1d1d1",
+     "roof": "#2c3e50",
+     "seed": 3936808172
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--flow_stabilization_hub",
+   "name": {
+    "de": "Fluss-Stabilisierungs-Zentrum",
+    "en": "Flow Stabilization Hub"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--optimized_logistics_flow": 20,
+    "gh-bmetallica--prestige_token": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 10,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--optimized_logistics_flow": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--order_stabilizer_core": 0.1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "fountain",
+     "accent": "#00ffcc",
+     "wall": "#ffffff",
+     "roof": "#a0a0a0",
+     "seed": 633546641
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -7235,6 +7317,20 @@
     "de": "Ein hochgradig stabilisierter Kern, der für die extremen Anforderungen der nächsten Ära optimiert wurde."
    },
    "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--optimized_logistics_flow",
+   "name": {
+    "de": "Optimierter Logistikfluss",
+    "en": "Optimized Logistics Flow"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein perfekt synchronisierter Daten- und Materiestrom, der die Grenzen der physischen Logistik überschreitet."
+   },
+   "icon": "🌊"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
