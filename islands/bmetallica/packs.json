@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-14T03:01:23.845Z",
+ "exportedAt": "2026-09-15T03:01:17.696Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -6519,6 +6519,101 @@
    }
   },
   {
+   "id": "gh-bmetallica--lattice_weaver_station",
+   "name": {
+    "de": "Gitter-Webstation",
+    "en": "Lattice Weaver Station"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--resonance_stabilization_fluid_refined": 30,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--resonance_stabilization_fluid_refined": 0.5,
+     "gh-bmetallica--existential_echo": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--resonance_lattice": 0.2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#7b2cbf",
+     "wall": "#e0aaff",
+     "roof": "#3c096c",
+     "seed": 4065385361
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--cosmic_structure_forge",
+   "name": {
+    "de": "Kosmische Struktur-Schmiede",
+    "en": "Cosmic Structure Forge"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--resonance_lattice": 40,
+    "gh-bmetallica--structural_resonance_core": 20
+   },
+   "buildTimeTicks": 500,
+   "workers": 18,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--resonance_lattice": 0.6,
+     "gh-bmetallica--structural_resonance_core": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--stabilized_foundation_core": 0.3
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--resonance_stabilization_hub_expansion": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "rock"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 3,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "accent": "#00f5d4",
+     "wall": "#f8f9fa",
+     "roof": "#dee2e6",
+     "seed": 3121085105
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -7628,6 +7723,20 @@
     "de": "Ein hochkonzentriertes, leuchtendes Elixier, gewonnen aus veredeltem kosmischem Nektar."
    },
    "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--resonance_lattice",
+   "name": {
+    "de": "Resonanz-Gitter",
+    "en": "Resonance Lattice"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochstrukturiertes Geflecht aus gefrorener Resonanz, das als stabiles Gerüst für kosmische Konstruktionen dient."
+   },
+   "icon": "🕸️"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
