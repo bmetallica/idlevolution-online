@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-15T03:01:17.696Z",
+ "exportedAt": "2026-09-16T03:01:13.520Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -6614,6 +6614,95 @@
    }
   },
   {
+   "id": "gh-bmetallica--sensory_harmony_distillery",
+   "name": {
+    "de": "Harmonie-Destille",
+    "en": "Harmony Distillery"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--sensory_essence": 40,
+    "gh-bmetallica--prestige_token": 30
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--sensory_essence": 0.6,
+     "gh-bmetallica--cosmic_nectar": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--sensory_harmony_essence": 0.25
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#ff00ff",
+     "wall": "#4b0082",
+     "roof": "#9400d3",
+     "seed": 1512486235
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--harmony_luxury_pavilion",
+   "name": {
+    "de": "Harmonie-Luxuspavillon",
+    "en": "Harmony Luxury Pavilion"
+   },
+   "category": "housing",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--sensory_harmony_essence": 20,
+    "gh-bmetallica--prestige_token": 80
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "housing": {
+    "capacity": 100
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--sensory_luxury_shrine": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "fountain",
+     "accent": "#00ffff",
+     "wall": "#ffffff",
+     "roof": "#e0ffff",
+     "seed": 4114923764
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -7737,6 +7826,20 @@
     "de": "Ein hochstrukturiertes Geflecht aus gefrorener Resonanz, das als stabiles Gerüst für kosmische Konstruktionen dient."
    },
    "icon": "🕸️"
+  },
+  {
+   "id": "gh-bmetallica--sensory_harmony_essence",
+   "name": {
+    "de": "Sensorische Harmonie-Essenz",
+    "en": "Sensory Harmony Essence"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Eine hochkonzentrierte Form der sensorischen Wahrnehmung, die für die höchste Stufe des Komforts benötigt wird."
+   },
+   "icon": "📦"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
