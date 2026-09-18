@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-17T03:01:21.031Z",
+ "exportedAt": "2026-09-18T03:01:21.892Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -6791,6 +6791,142 @@
    }
   },
   {
+   "id": "gh-bmetallica--causal_stabilization_pylon",
+   "name": {
+    "de": "Kausaler Stabilisierungs-Pylon",
+    "en": "Causal Stabilization Pylon"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--causal_anomaly": 40,
+    "gh-bmetallica--prestige_token": 150
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--causal_anomaly": 0.4,
+     "gh-bmetallica--existential_echo": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--causal_anchor_core": 0.1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 1,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#4a90e2",
+     "wall": "#2c3e50",
+     "roof": "#34495e",
+     "seed": 3265551463
+    },
+    "military": {
+     "defense": 150
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--existence_fortress_expansion",
+   "name": {
+    "de": "Existenz-Festung: Erweiterung",
+    "en": "Existential Fortress: Expansion"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--causal_anchor_core": 5,
+    "gh-bmetallica--defense_protocol_core": 20
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--existential_fortress": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 2
+    },
+    "size": {
+     "w": 3,
+     "h": 3
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#e74c3c",
+     "wall": "#7f8c8d",
+     "roof": "#2c3e50",
+     "seed": 1347031548
+    },
+    "military": {
+     "defense": 165
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--harmony_resonance_sink",
+   "name": {
+    "de": "Harmonie-Resonanz-Senke",
+    "en": "Harmony Resonance Sink"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--sensory_harmony_essence": 100,
+    "gh-bmetallica--prestige_token": 200
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--sensory_harmony_essence": 0.8
+    },
+    "outputs": {
+     "gh-bmetallica--prestige_token": 0.4
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "water": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "fountain",
+     "accent": "#f1c40f",
+     "wall": "#ecf0f1",
+     "roof": "#bdc3c7",
+     "seed": 1256001100
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -7282,7 +7418,7 @@
    "description": {
     "de": "Laborgezüchtete Proteine, die die traditionelle Landwirtschaft ablösen."
    },
-   "icon": "⚓"
+   "icon": "🪝"
   },
   {
    "id": "gh-bmetallica--prestige_token",
@@ -7296,7 +7432,7 @@
    "description": {
     "de": "Ein symbolisches Gut, das den sozialen Status und den kulturellen Einfluss in der Ära der Transzendenz repräsentiert."
    },
-   "icon": "🪝"
+   "icon": "🧭"
   },
   {
    "id": "gh-bmetallica--historical_record",
@@ -7310,7 +7446,7 @@
    "description": {
     "de": "Eine perfekt konservierte Rekonstruktion der Menschheitsgeschichte, extrahiert aus Satellitendaten."
    },
-   "icon": "🧭"
+   "icon": "🔭"
   },
   {
    "id": "gh-bmetallica--stable_quantum_matter",
@@ -7353,7 +7489,7 @@
    "description": {
     "de": "Ein exklusives Konsumgut, das direkt mit dem Nervensystem interagiert, um vollkommene Entspannung zu bieten."
    },
-   "icon": "🔭"
+   "icon": "⏳"
   },
   {
    "id": "gh-bmetallica--transcendence_data",
@@ -7437,7 +7573,7 @@
    "description": {
     "de": "Eine hochkonzentrierte Form von Paradoxon-Fragmenten, die zur Stabilisierung kultureller Manifestationen benötigt wird."
    },
-   "icon": "⏳"
+   "icon": "🪙"
   },
   {
    "id": "gh-bmetallica--sensory_essence",
@@ -7451,7 +7587,7 @@
    "description": {
     "de": "Eine hochkonzentrierte Form von Sinneswahrnehmung, die für die höchste Stufe des Komforts benötigt wird."
    },
-   "icon": "🪙"
+   "icon": "💰"
   },
   {
    "id": "gh-bmetallica--order_stabilizer_core",
@@ -7493,7 +7629,7 @@
    "description": {
     "de": "Ein Objekt, das die Gesetze von Ursache und Wirkung ignoriert."
    },
-   "icon": "💰"
+   "icon": "📿"
   },
   {
    "id": "gh-bmetallica--existential_echo",
@@ -7521,7 +7657,7 @@
    "description": {
     "de": "Eine hochkonzentrierte Form von Lebensenergie, extrahiert aus dem Nektar der Sterne."
    },
-   "icon": "📿"
+   "icon": "🧿"
   },
   {
    "id": "gh-bmetallica--stabilized_existence_core",
@@ -7535,7 +7671,7 @@
    "description": {
     "de": "Ein hochverdichteter Kern, der die Realität lokal gegen den Zerfall sichert."
    },
-   "icon": "🧿"
+   "icon": "🪬"
   },
   {
    "id": "gh-bmetallica--sensory_pleasure_core",
@@ -7549,7 +7685,7 @@
    "description": {
     "de": "Ein hochverdichteter Kern aus reiner Sinneswahrnehmung."
    },
-   "icon": "🪬"
+   "icon": "🗿"
   },
   {
    "id": "gh-bmetallica--defense_protocol_core",
@@ -7563,7 +7699,7 @@
    "description": {
     "de": "Ein hochkomplexer Rechenkern, der die Verteidigungsstrategien der Siedlung in Echtzeit optimiert."
    },
-   "icon": "🗿"
+   "icon": "🎗️"
   },
   {
    "id": "gh-bmetallica--refined_leather",
@@ -7591,7 +7727,7 @@
    "description": {
     "de": "Eine Rüstung, die nicht nur schützt, sondern den Status des Trägers in der kosmischen Hierarchie manifestiert."
    },
-   "icon": "🎗️"
+   "icon": "🏆"
   },
   {
    "id": "gh-bmetallica--ceremonial_supply_kit",
@@ -7619,7 +7755,7 @@
    "description": {
     "de": "Ein hochkomplexes Bauteil zur Aufrechterhaltung der lokalen Realitätsstruktur."
    },
-   "icon": "🏆"
+   "icon": "🪞"
   },
   {
    "id": "gh-bmetallica--cosmic_order_essence",
@@ -7633,7 +7769,7 @@
    "description": {
     "de": "Die reinste Form der Ordnung, extrahiert aus den stabilsten Bereichen des Multiversums."
    },
-   "icon": "🪞"
+   "icon": "🔮"
   },
   {
    "id": "gh-bmetallica--anomaly_residue",
@@ -7647,7 +7783,7 @@
    "description": {
     "de": "Ein instabiler Abfallstoff, der bei der Ernte von Anomalien zurückbleibt."
    },
-   "icon": "🔮"
+   "icon": "📦"
   },
   {
    "id": "gh-bmetallica--cosmic_order_catalyst",
@@ -7942,6 +8078,20 @@
     "de": "Substanzielle Überreste, die bei der Destillation von Harmonie entstehen."
    },
    "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--causal_anchor_core",
+   "name": {
+    "de": "Kausaler Ankerkern",
+    "en": "Causal Anchor Core"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochverdichteter Kern, der die lokale Kausalität fixiert und gegen existenzielle Fluktuationen schützt."
+   },
+   "icon": "⚓"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
