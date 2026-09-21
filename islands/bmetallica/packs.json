@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-20T03:01:15.167Z",
+ "exportedAt": "2026-09-21T03:01:38.276Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -7103,6 +7103,95 @@
    }
   },
   {
+   "id": "gh-bmetallica--causal_essence_stabilization_forge",
+   "name": {
+    "de": "Kausal-Stabilisierungs-Schmiede",
+    "en": "Causal Stabilization Forge"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--causal_anchor_essence_refined": 20,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--causal_anchor_essence_refined": 0.6
+    },
+    "outputs": {
+     "gh-bmetallica--causal_anchor_essence_refined_core": 0.3
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--causal_essence_refinery": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "rock"
+    ],
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "accent": "#4a90e2",
+     "wall": "#2c3e50",
+     "roof": "#34495e",
+     "seed": 1091413789
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--causal_monument_expansion_hub",
+   "name": {
+    "de": "Kausal-Monument-Zentrum",
+    "en": "Causal Monument Hub"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--causal_anchor_essence_refined_core": 10,
+    "gh-bmetallica--cultural_artifact": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 10,
+   "production": {
+    "inputs": {},
+    "outputs": {}
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--causal_essence_stabilization_forge": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#8e44ad",
+     "wall": "#ffffff",
+     "roof": "#2c3e50",
+     "seed": 3655587134
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -8294,6 +8383,20 @@
    "baseValue": 1000,
    "description": {
     "de": "Eine hochgradig stabilisierte Form der kausalen Energie, bereit für den Einsatz in monumentalen Strukturen."
+   },
+   "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--causal_anchor_essence_refined_core",
+   "name": {
+    "de": "Gereinigter Kausal-Anker-Kern",
+    "en": "Refined Causal Anchor Core"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochverdichteter Kern aus gereinigter Kausal-Essenz, bereit für die monumentale Architektur."
    },
    "icon": "📦"
   },
