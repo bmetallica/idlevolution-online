@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-22T03:01:14.889Z",
+ "exportedAt": "2026-09-23T03:01:25.227Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -7282,6 +7282,149 @@
    }
   },
   {
+   "id": "gh-bmetallica--mercantile_exchange_nexus",
+   "name": {
+    "de": "Handels-Austausch-Nexus",
+    "en": "Mercantile Exchange Nexus"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--prestige_token": 150,
+    "gh-bmetallica--sensory_essence": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--prestige_token": 0.5,
+     "gh-bmetallica--sensory_essence": 0.3
+    },
+    "outputs": {
+     "gh-bmetallica--cosmic_mercantile_token": 0.1
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--luxury_exchange_hub": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "market",
+     "accent": "#ffd700",
+     "wall": "#f0f0f0",
+     "roof": "#daa520",
+     "seed": 1829845241
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--cosmic_trade_embassy",
+   "name": {
+    "de": "Kosmische Handelsbotschaft",
+    "en": "Cosmic Trade Embassy"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--cosmic_mercantile_token": 20,
+    "gh-bmetallica--historical_record": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 10,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--cosmic_mercantile_token": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--prestige_token": 0.876
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--mercantile_exchange_nexus": 1
+    },
+    "resources": {
+     "gh-bmetallica--cosmic_mercantile_token": 10
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 3
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#00ced1",
+     "wall": "#ffffff",
+     "roof": "#00ced1",
+     "seed": 2948830073
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--grand_cosmic_bazaar",
+   "name": {
+    "de": "Großer Kosmischer Basar",
+    "en": "Grand Cosmic Bazaar"
+   },
+   "category": "housing",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--cosmic_mercantile_token": 50,
+    "gh-bmetallica--prestige_token": 200
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "housing": {
+    "capacity": 100
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--cosmic_trade_embassy": 1
+    },
+    "resources": {
+     "gh-bmetallica--cosmic_mercantile_token": 30
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 3,
+     "h": 3
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "market",
+     "accent": "#ff4500",
+     "wall": "#deb887",
+     "roof": "#ff4500",
+     "seed": 2308562794
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -8501,6 +8644,20 @@
    "baseValue": 1000,
    "description": {
     "de": "Ein perfekt ausgerichteter Kern, der die Kausalität in einem konstanten Zustand hält."
+   },
+   "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--cosmic_mercantile_token",
+   "name": {
+    "de": "Kosmischer Handelswert",
+    "en": "Cosmic Trade Value"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochkonzentrierter Wertmaßstab, der den Erfolg des interdimensionalen Handels repräsentiert."
    },
    "icon": "📦"
   },
