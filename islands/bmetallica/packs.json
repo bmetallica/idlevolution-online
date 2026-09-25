@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-23T03:01:25.227Z",
+ "exportedAt": "2026-09-25T03:01:23.500Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -7425,6 +7425,105 @@
    }
   },
   {
+   "id": "gh-bmetallica--causal_signal_array",
+   "name": {
+    "de": "Kausales Signal-Array",
+    "en": "Causal Signal Array"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--transcendence_data": 100,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--transcendence_data": 0.6
+    },
+    "outputs": {
+     "gh-bmetallica--causal_stabilization_signal": 0.2
+    }
+   },
+   "storage": {
+    "gh-bmetallica--causal_stabilization_signal": 500
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#4a90e2",
+     "wall": "#2c3e50",
+     "roof": "#34495e",
+     "seed": 1302715227
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--causal_defense_bastion_prime",
+   "name": {
+    "de": "Kausale Verteidigungs-Bastion",
+    "en": "Causal Defense Bastion"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--causal_stabilization_signal": 20,
+    "gh-bmetallica--defense_protocol_core": 10
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--causal_stabilization_signal": 0.4
+    },
+    "outputs": {
+     "soldiers": 1.5
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--causal_stabilization_pylon": 1
+    },
+    "resources": {
+     "gh-bmetallica--causal_stabilization_signal": 10
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "rock"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 3,
+     "h": 3
+    }
+   },
+   "meta": {
+    "military": {
+     "defense": 150
+    },
+    "art": {
+     "wall": "#cfd4db",
+     "roof": "#54799c",
+     "accent": "#cb4d6f",
+     "seed": 334247744
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -8660,6 +8759,20 @@
     "de": "Ein hochkonzentrierter Wertmaßstab, der den Erfolg des interdimensionalen Handels repräsentiert."
    },
    "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--causal_stabilization_signal",
+   "name": {
+    "de": "Kausales Stabilisierungssignal",
+    "en": "Causal Stabilization Signal"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochfrequentes Signal, das die Kausalität lokal festigt."
+   },
+   "icon": "📡"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
