@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-25T03:01:23.500Z",
+ "exportedAt": "2026-09-26T03:01:19.659Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -7524,6 +7524,99 @@
    }
   },
   {
+   "id": "gh-bmetallica--order_spark_condenser",
+   "name": {
+    "de": "Ordnungsfunken-Kondensator",
+    "en": "Order Spark Condenser"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--order_stabilizer_core": 40,
+    "gh-bmetallica--prestige_token": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--order_stabilizer_core": 0.5,
+     "gh-bmetallica--cosmic_resonance": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--primordial_order_spark": 0.1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#00f2ff",
+     "wall": "#2a2a2a",
+     "roof": "#1a1a1a",
+     "seed": 2210429201
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--singularity_ascension_altar",
+   "name": {
+    "de": "Singularitäts-Aufstiegsaltar",
+    "en": "Singularity Ascension Altar"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--primordial_order_spark": 10,
+    "gh-bmetallica--prestige_token": 500
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "production": {
+    "inputs": {},
+    "outputs": {}
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--order_spark_condenser": 1
+    },
+    "resources": {
+     "gh-bmetallica--primordial_order_spark": 5
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "water": 1
+    },
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#ffffff",
+     "wall": "#c5cad0",
+     "roof": "#486886",
+     "seed": 1345307435
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -8773,6 +8866,20 @@
     "de": "Ein hochfrequentes Signal, das die Kausalität lokal festigt."
    },
    "icon": "📡"
+  },
+  {
+   "id": "gh-bmetallica--primordial_order_spark",
+   "name": {
+    "de": "Ur-Ordnungsfunke",
+    "en": "Primordial Order Spark"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein winziges, aber unendlich dichtes Fragment reiner Ordnung, das aus der Interferenz von Kausalität und Entropie entsteht."
+   },
+   "icon": "📦"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
