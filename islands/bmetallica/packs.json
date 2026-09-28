@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-27T03:01:24.515Z",
+ "exportedAt": "2026-09-28T03:01:18.974Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -7617,6 +7617,85 @@
    }
   },
   {
+   "id": "gh-bmetallica--spark_refinery",
+   "name": {
+    "de": "Funken-Veredelungsanlage",
+    "en": "Spark Refinery"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--primordial_order_spark": 50,
+    "gh-bmetallica--prestige_token": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--primordial_order_spark": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--primordial_order_spark_refined": 0.2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#ffcc00",
+     "wall": "#4a4a4a",
+     "roof": "#2a2a2a",
+     "seed": 4092431063
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--order_stabilization_hub_v2",
+   "name": {
+    "de": "Ordnungs-Stabilisierungs-Zentrum",
+    "en": "Order Stabilization Center"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--primordial_order_spark_refined": 20,
+    "gh-bmetallica--prestige_token": 150
+   },
+   "buildTimeTicks": 500,
+   "workers": 20,
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--order_spark_condenser": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#00ffff",
+     "wall": "#ffffff",
+     "roof": "#008b8b",
+     "seed": 2083277324
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -8878,6 +8957,20 @@
    "baseValue": 1000,
    "description": {
     "de": "Ein winziges, aber unendlich dichtes Fragment reiner Ordnung, das aus der Interferenz von Kausalität und Entropie entsteht."
+   },
+   "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--primordial_order_spark_refined",
+   "name": {
+    "de": "Gereifter Ur-Ordnungsfunke",
+    "en": "Refined Primordial Order Spark"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochverdichteter Funke der ursprünglichen Ordnung, bereit für die nächste Stufe der Existenz."
    },
    "icon": "📦"
   },
