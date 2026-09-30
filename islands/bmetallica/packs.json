@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-29T03:01:21.161Z",
+ "exportedAt": "2026-09-30T03:01:25.634Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -7791,6 +7791,134 @@
    }
   },
   {
+   "id": "gh-bmetallica--mercantile_trading_post",
+   "name": {
+    "de": "Handels-Außenposten",
+    "en": "Mercantile Trading Post"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--prestige_token": 100,
+    "gh-bmetallica--cosmic_mercantile_token": 10
+   },
+   "buildTimeTicks": 400,
+   "workers": 6,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--cosmic_mercantile_token": 0.5,
+     "gh-bmetallica--prestige_token": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--mercantile_prestige_bond": 0.2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 2
+    },
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "market",
+     "accent": "#ffd700",
+     "wall": "#f5f5f5",
+     "roof": "#daa520",
+     "seed": 1933016444
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--prestige_exchange_hall",
+   "name": {
+    "de": "Prestige-Austauschhalle",
+    "en": "Prestige Exchange Hall"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--mercantile_prestige_bond": 20,
+    "gh-bmetallica--prestige_token": 150
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--mercantile_prestige_bond": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--prestige_token": 0.8
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 3
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#ff00ff",
+     "wall": "#ffffff",
+     "roof": "#4b0082",
+     "seed": 2748113130
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--luxury_boutique_complex",
+   "name": {
+    "de": "Luxus-Boutiquen-Komplex",
+    "en": "Luxury Boutique Complex"
+   },
+   "category": "housing",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--mercantile_prestige_bond": 50,
+    "gh-bmetallica--prestige_token": 200
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "housing": {
+    "capacity": 100
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 1
+    },
+    "size": {
+     "w": 3,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "house",
+     "accent": "#ff69b4",
+     "wall": "#fff0f5",
+     "roof": "#db7093",
+     "seed": 2761410008
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -8058,7 +8186,7 @@
    "description": {
     "de": "Verarbeitetes Papier für Druckereien und Verwaltung."
    },
-   "icon": "📜"
+   "icon": "📖"
   },
   {
    "id": "gh-bmetallica--gunpowder",
@@ -9082,6 +9210,20 @@
     "de": "Ein hochkonzentrierter Kern aus Ur-Ordnung, bereit für die Integration in kosmische Strukturen."
    },
    "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--mercantile_prestige_bond",
+   "name": {
+    "de": "Handels-Prestige-Bond",
+    "en": "Mercantile Prestige Bond"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochgeschätztes Zertifikat, das den Status eines intergalaktischen Großhändlers besiegelt."
+   },
+   "icon": "📜"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
