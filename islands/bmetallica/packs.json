@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-09-30T03:01:25.634Z",
+ "exportedAt": "2026-10-01T03:01:19.379Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -7919,6 +7919,97 @@
    }
   },
   {
+   "id": "gh-bmetallica--logistics_distribution_hub",
+   "name": {
+    "de": "Logistik-Distributions-Zentrum",
+    "en": "Logistics Distribution Center"
+   },
+   "category": "storage",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--transcendence_data": 200,
+    "gh-bmetallica--logistics_buffer_core_refined": 30
+   },
+   "buildTimeTicks": 500,
+   "workers": 8,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--logistics_buffer_core_refined": 0.5
+    },
+    "outputs": {
+     "gh-bmetallica--logistics_stabilization_node": 0.1
+    }
+   },
+   "storage": {
+    "*": 5000
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "warehouse",
+     "accent": "#4a90e2",
+     "wall": "#d1d1d1",
+     "roof": "#2c3e50",
+     "seed": 3037850323
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--supply_chain_optimizer",
+   "name": {
+    "de": "Lieferketten-Optimierer",
+    "en": "Supply Chain Optimizer"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--logistics_stabilization_node": 10,
+    "gh-bmetallica--prestige_token": 150
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--logistics_stabilization_node": 0.4,
+     "gh-bmetallica--optimized_logistics_flow": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--optimized_logistics_flow": 0.3
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--logistics_distribution_hub": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#f1c40f",
+     "wall": "#ecf0f1",
+     "roof": "#34495e",
+     "seed": 3776241732
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -9224,6 +9315,20 @@
     "de": "Ein hochgeschätztes Zertifikat, das den Status eines intergalaktischen Großhändlers besiegelt."
    },
    "icon": "📜"
+  },
+  {
+   "id": "gh-bmetallica--logistics_stabilization_node",
+   "name": {
+    "de": "Logistik-Stabilisierungs-Knoten",
+    "en": "Logistics Stabilization Node"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochkomplexer Knotenpunkt zur Synchronisation von Warenströmen."
+   },
+   "icon": "📦"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
