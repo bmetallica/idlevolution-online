@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-10-01T03:01:19.379Z",
+ "exportedAt": "2026-10-02T03:01:24.070Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -8010,6 +8010,144 @@
    }
   },
   {
+   "id": "gh-bmetallica--causal_stabilization_array",
+   "name": {
+    "de": "Kausales Stabilisierungs-Array",
+    "en": "Causal Stabilization Array"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--causal_anchor_essence_refined": 40,
+    "gh-bmetallica--prestige_token": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--causal_anchor_essence_refined": 0.6,
+     "gh-bmetallica--transcendence_data": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--reality_anchor_core": 0.1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "rock": 1
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "tower",
+     "accent": "#4a90e2",
+     "wall": "#2c3e50",
+     "roof": "#34495e",
+     "seed": 507060418
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--existential_defense_bastion",
+   "name": {
+    "de": "Existenzielle Verteidigungs-Bastion",
+    "en": "Existential Defense Bastion"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--reality_anchor_core": 10,
+    "gh-bmetallica--defense_protocol_core": 20
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "production": {
+    "inputs": {},
+    "outputs": {}
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--existential_fortress": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "rock"
+    ],
+    "adjacent": {
+     "water": 1
+    },
+    "size": {
+     "w": 3,
+     "h": 3
+    }
+   },
+   "meta": {
+    "military": {
+     "defense": 150
+    },
+    "art": {
+     "wall": "#bec3c9",
+     "roof": "#527799",
+     "accent": "#c9cb4d",
+     "seed": 1911443101
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--reality_integrity_monument",
+   "name": {
+    "de": "Monument der Realitätsintegrität",
+    "en": "Monument of Reality Integrity"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--reality_anchor_core": 50,
+    "gh-bmetallica--cultural_artifact": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 0,
+   "production": {
+    "inputs": {},
+    "outputs": {}
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--causal_stabilization_pylon": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "adjacent": {
+     "grass": 4
+    },
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "wall": "#e3e8f0",
+     "roof": "#4b6c8b",
+     "accent": "#cb4db0",
+     "seed": 3193656433
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -9327,6 +9465,20 @@
    "baseValue": 1000,
    "description": {
     "de": "Ein hochkomplexer Knotenpunkt zur Synchronisation von Warenströmen."
+   },
+   "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--reality_anchor_core",
+   "name": {
+    "de": "Realitäts-Ankerkern",
+    "en": "Reality Anchor Core"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochverdichteter Kern, der die lokale Kausalität stabilisiert."
    },
    "icon": "📦"
   },
