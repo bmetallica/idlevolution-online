@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-10-02T03:01:24.070Z",
+ "exportedAt": "2026-10-03T03:01:19.913Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -8148,6 +8148,95 @@
    }
   },
   {
+   "id": "gh-bmetallica--reality_anchor_forge",
+   "name": {
+    "de": "Realitäts-Anker-Schmiede",
+    "en": "Reality Anchor Forge"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--reality_anchor_core": 10,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--reality_anchor_core": 0.5,
+     "gh-bmetallica--causal_anchor_essence_refined": 0.3
+    },
+    "outputs": {
+     "gh-bmetallica--causal_anchor_stabilizer": 0.2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass",
+     "rock"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "accent": "#4a90e2",
+     "wall": "#2c3e50",
+     "roof": "#34495e",
+     "seed": 1556279353
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--causal_stability_monument_hub",
+   "name": {
+    "de": "Kausalitäts-Stabilitäts-Zentrum",
+    "en": "Causal Stability Center"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--causal_anchor_stabilizer": 5,
+    "gh-bmetallica--cultural_artifact": 40
+   },
+   "buildTimeTicks": 500,
+   "workers": 10,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--causal_anchor_stabilizer": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--prestige_token": 0.8
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--causal_stabilization_monument": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 3,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#00ffcc",
+     "wall": "#ffffff",
+     "roof": "#00ced1",
+     "seed": 1900542220
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -9479,6 +9568,20 @@
    "baseValue": 1000,
    "description": {
     "de": "Ein hochverdichteter Kern, der die lokale Kausalität stabilisiert."
+   },
+   "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--causal_anchor_stabilizer",
+   "name": {
+    "de": "Kausaler Anker-Stabilisator",
+    "en": "Causal Anchor Stabilizer"
+   },
+   "category": "special",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein hochkomplexes Gerät zur Fixierung von Kausalitätslinien."
    },
    "icon": "📦"
   },
