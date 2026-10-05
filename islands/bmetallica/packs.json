@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-10-04T03:01:26.591Z",
+ "exportedAt": "2026-10-05T03:01:19.666Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -8367,6 +8367,93 @@
    }
   },
   {
+   "id": "gh-bmetallica--wisdom_essence_refinery",
+   "name": {
+    "de": "Weisheits-Essenz-Raffinerie",
+    "en": "Wisdom Essence Refinery"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--collective_wisdom": 40,
+    "gh-bmetallica--prestige_token": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--collective_wisdom": 0.6
+    },
+    "outputs": {
+     "gh-bmetallica--wisdom_essence": 0.3
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 1
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#a855f7",
+     "wall": "#f3e8ff",
+     "roof": "#7e22ce",
+     "seed": 2324944304
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--wisdom_focus_center",
+   "name": {
+    "de": "Weisheits-Fokus-Zentrum",
+    "en": "Wisdom Focus Center"
+   },
+   "category": "civic",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--wisdom_essence": 20,
+    "gh-bmetallica--prestige_token": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 15,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--wisdom_essence": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--prestige_token": 0.8
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--wisdom_oasis": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "temple",
+     "accent": "#fbbf24",
+     "wall": "#fffbeb",
+     "roof": "#d97706",
+     "seed": 3659658187
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -9728,6 +9815,20 @@
     "de": "Ein destilliertes Gut aus den geteilten Erfahrungen aller transzendenten Wesen."
    },
    "icon": "🧠"
+  },
+  {
+   "id": "gh-bmetallica--wisdom_essence",
+   "name": {
+    "de": "Weisheits-Essenz",
+    "en": "Wisdom Essence"
+   },
+   "category": "luxury",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Eine hochverdichtete Form der kollektiven Weisheit, bereit für den transzendenten Konsum."
+   },
+   "icon": "📦"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
