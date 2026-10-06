@@ -1,7 +1,7 @@
 {
  "version": 1,
  "owner": "bmetallica",
- "exportedAt": "2026-10-05T03:01:19.666Z",
+ "exportedAt": "2026-10-06T03:01:19.484Z",
  "buildings": [
   {
    "id": "gh-bmetallica--steel_mill",
@@ -8454,6 +8454,95 @@
    }
   },
   {
+   "id": "gh-bmetallica--causal_weaver_loom",
+   "name": {
+    "de": "Kausaler Webstuhl",
+    "en": "Causal Weaver Loom"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--causal_anomaly": 30,
+    "gh-bmetallica--transcendence_data": 50
+   },
+   "buildTimeTicks": 500,
+   "workers": 12,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--causal_anomaly": 0.5,
+     "gh-bmetallica--transcendence_data": 0.4
+    },
+    "outputs": {
+     "gh-bmetallica--reality_fabric": 0.2
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "workshop",
+     "accent": "#7b2cbf",
+     "wall": "#e0aaff",
+     "roof": "#3c096c",
+     "seed": 1908823219
+    }
+   }
+  },
+  {
+   "id": "gh-bmetallica--fabric_structure_forge",
+   "name": {
+    "de": "Gewebe-Struktur-Schmiede",
+    "en": "Fabric Structure Forge"
+   },
+   "category": "production",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "cost": {
+    "gh-bmetallica--reality_fabric": 40,
+    "gh-bmetallica--prestige_token": 100
+   },
+   "buildTimeTicks": 500,
+   "workers": 18,
+   "production": {
+    "inputs": {
+     "gh-bmetallica--reality_fabric": 0.6,
+     "gh-bmetallica--structural_resonance_core": 0.2
+    },
+    "outputs": {
+     "gh-bmetallica--stabilized_foundation_core": 0.3
+    }
+   },
+   "requires": {
+    "buildings": {
+     "gh-bmetallica--causal_weaver_loom": 1
+    }
+   },
+   "placement": {
+    "terrain": [
+     "grass"
+    ],
+    "size": {
+     "w": 2,
+     "h": 2
+    }
+   },
+   "meta": {
+    "art": {
+     "shape": "smelter",
+     "accent": "#00f5d4",
+     "wall": "#ffffff",
+     "roof": "#00bbf9",
+     "seed": 3597341142
+    }
+   }
+  },
+  {
    "id": "gh-bmetallica--gh-idlevolution-demo--muschelsammler",
    "name": {
     "de": "Muschelsammler",
@@ -8679,7 +8768,7 @@
    "description": {
     "de": "Rohwolle von den Schafen der Siedlung."
    },
-   "icon": "🧵"
+   "icon": "🧶"
   },
   {
    "id": "gh-bmetallica--cloth",
@@ -8693,7 +8782,7 @@
    "description": {
     "de": "Gewebter Stoff aus Wolle."
    },
-   "icon": "🧶"
+   "icon": "🟡"
   },
   {
    "id": "gh-bmetallica--leather",
@@ -8763,7 +8852,7 @@
    "description": {
     "de": "Präzise gefertigte Komponenten für Dampfmaschinen und Fabrikantriebe."
    },
-   "icon": "🟡"
+   "icon": "🟢"
   },
   {
    "id": "gh-bmetallica--electricity",
@@ -8777,7 +8866,7 @@
    "description": {
     "de": "Die Kraft der Elektrizität erleuchtet die moderne Welt."
    },
-   "icon": "🟢"
+   "icon": "🔵"
   },
   {
    "id": "gh-bmetallica--microchip",
@@ -8791,7 +8880,7 @@
    "description": {
     "de": "Hochpräzise Siliziumbausteine für die moderne Elektronik."
    },
-   "icon": "🔵"
+   "icon": "🟣"
   },
   {
    "id": "gh-bmetallica--software",
@@ -8805,7 +8894,7 @@
    "description": {
     "de": "Digitale Instruktionen, die Maschinen und Systeme steuern."
    },
-   "icon": "🟣"
+   "icon": "🟥"
   },
   {
    "id": "gh-bmetallica--quantum_processor",
@@ -8819,7 +8908,7 @@
    "description": {
     "de": "Ein hochkomplexer Prozessor, der auf Quantenmechanik basiert."
    },
-   "icon": "🟥"
+   "icon": "🟩"
   },
   {
    "id": "gh-bmetallica--satellite_data",
@@ -8833,7 +8922,7 @@
    "description": {
     "de": "Echtzeitdatenströme aus dem orbitalen Netzwerk."
    },
-   "icon": "🟩"
+   "icon": "🟦"
   },
   {
    "id": "gh-bmetallica--cyber_security_key",
@@ -8847,7 +8936,7 @@
    "description": {
     "de": "Ein hochkomplexer kryptografischer Schlüssel zum Schutz von Datenströmen."
    },
-   "icon": "🟦"
+   "icon": "🟪"
   },
   {
    "id": "gh-bmetallica--quantum_encryption",
@@ -8861,7 +8950,7 @@
    "description": {
     "de": "Unknackbare Verschlüsselung auf Basis von Quantenzuständen."
    },
-   "icon": "🟪"
+   "icon": "🔹"
   },
   {
    "id": "gh-bmetallica--neural_network_core",
@@ -8903,7 +8992,7 @@
    "description": {
     "de": "Ein hochkomplexes biologisch-digitales Hybridgut."
    },
-   "icon": "🔹"
+   "icon": "🧴"
   },
   {
    "id": "gh-bmetallica--cultural_artifact",
@@ -8917,7 +9006,7 @@
    "category": "luxury",
    "epoch": "gh-bmetallica--quantum_age",
    "baseValue": 1000,
-   "icon": "🧴"
+   "icon": "🔗"
   },
   {
    "id": "gh-bmetallica--nutrient_paste",
@@ -8931,7 +9020,7 @@
    "description": {
     "de": "Eine hochkonzentrierte, synthetische Nahrungsgrundlage für die Bewohner der Singularität."
    },
-   "icon": "🔗"
+   "icon": "🪝"
   },
   {
    "id": "gh-bmetallica--bio_protein",
@@ -8945,7 +9034,7 @@
    "description": {
     "de": "Laborgezüchtete Proteine, die die traditionelle Landwirtschaft ablösen."
    },
-   "icon": "🪝"
+   "icon": "🧭"
   },
   {
    "id": "gh-bmetallica--prestige_token",
@@ -8959,7 +9048,7 @@
    "description": {
     "de": "Ein symbolisches Gut, das den sozialen Status und den kulturellen Einfluss in der Ära der Transzendenz repräsentiert."
    },
-   "icon": "🧭"
+   "icon": "🔭"
   },
   {
    "id": "gh-bmetallica--historical_record",
@@ -8973,7 +9062,7 @@
    "description": {
     "de": "Eine perfekt konservierte Rekonstruktion der Menschheitsgeschichte, extrahiert aus Satellitendaten."
    },
-   "icon": "🔭"
+   "icon": "⏳"
   },
   {
    "id": "gh-bmetallica--stable_quantum_matter",
@@ -9016,7 +9105,7 @@
    "description": {
     "de": "Ein exklusives Konsumgut, das direkt mit dem Nervensystem interagiert, um vollkommene Entspannung zu bieten."
    },
-   "icon": "⏳"
+   "icon": "🪙"
   },
   {
    "id": "gh-bmetallica--transcendence_data",
@@ -9100,7 +9189,7 @@
    "description": {
     "de": "Eine hochkonzentrierte Form von Paradoxon-Fragmenten, die zur Stabilisierung kultureller Manifestationen benötigt wird."
    },
-   "icon": "🪙"
+   "icon": "💰"
   },
   {
    "id": "gh-bmetallica--sensory_essence",
@@ -9114,7 +9203,7 @@
    "description": {
     "de": "Eine hochkonzentrierte Form von Sinneswahrnehmung, die für die höchste Stufe des Komforts benötigt wird."
    },
-   "icon": "💰"
+   "icon": "📿"
   },
   {
    "id": "gh-bmetallica--order_stabilizer_core",
@@ -9156,7 +9245,7 @@
    "description": {
     "de": "Ein Objekt, das die Gesetze von Ursache und Wirkung ignoriert."
    },
-   "icon": "📿"
+   "icon": "🧿"
   },
   {
    "id": "gh-bmetallica--existential_echo",
@@ -9184,7 +9273,7 @@
    "description": {
     "de": "Eine hochkonzentrierte Form von Lebensenergie, extrahiert aus dem Nektar der Sterne."
    },
-   "icon": "🧿"
+   "icon": "🪬"
   },
   {
    "id": "gh-bmetallica--stabilized_existence_core",
@@ -9198,7 +9287,7 @@
    "description": {
     "de": "Ein hochverdichteter Kern, der die Realität lokal gegen den Zerfall sichert."
    },
-   "icon": "🪬"
+   "icon": "🗿"
   },
   {
    "id": "gh-bmetallica--sensory_pleasure_core",
@@ -9212,7 +9301,7 @@
    "description": {
     "de": "Ein hochverdichteter Kern aus reiner Sinneswahrnehmung."
    },
-   "icon": "🗿"
+   "icon": "🎗️"
   },
   {
    "id": "gh-bmetallica--defense_protocol_core",
@@ -9226,7 +9315,7 @@
    "description": {
     "de": "Ein hochkomplexer Rechenkern, der die Verteidigungsstrategien der Siedlung in Echtzeit optimiert."
    },
-   "icon": "🎗️"
+   "icon": "🏆"
   },
   {
    "id": "gh-bmetallica--refined_leather",
@@ -9254,7 +9343,7 @@
    "description": {
     "de": "Eine Rüstung, die nicht nur schützt, sondern den Status des Trägers in der kosmischen Hierarchie manifestiert."
    },
-   "icon": "🏆"
+   "icon": "🪞"
   },
   {
    "id": "gh-bmetallica--ceremonial_supply_kit",
@@ -9282,7 +9371,7 @@
    "description": {
     "de": "Ein hochkomplexes Bauteil zur Aufrechterhaltung der lokalen Realitätsstruktur."
    },
-   "icon": "🪞"
+   "icon": "🔮"
   },
   {
    "id": "gh-bmetallica--cosmic_order_essence",
@@ -9296,7 +9385,7 @@
    "description": {
     "de": "Die reinste Form der Ordnung, extrahiert aus den stabilsten Bereichen des Multiversums."
    },
-   "icon": "🔮"
+   "icon": "📦"
   },
   {
    "id": "gh-bmetallica--anomaly_residue",
@@ -9829,6 +9918,20 @@
     "de": "Eine hochverdichtete Form der kollektiven Weisheit, bereit für den transzendenten Konsum."
    },
    "icon": "📦"
+  },
+  {
+   "id": "gh-bmetallica--reality_fabric",
+   "name": {
+    "de": "Realitätsgewebe",
+    "en": "Reality Fabric"
+   },
+   "category": "processed",
+   "epoch": "gh-bmetallica--transcendence_age",
+   "baseValue": 1000,
+   "description": {
+    "de": "Ein aus kausalen Anomalien und stabilisierten Daten gewebtes Material, das die Grundlage für neue Strukturen bildet."
+   },
+   "icon": "🧵"
   },
   {
    "id": "gh-bmetallica--gh-idlevolution-demo--muscheln",
