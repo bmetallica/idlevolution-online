@@ -13,6 +13,11 @@ permissions:
   contents: write
   pull-requests: write
 
+# Ein Upload kann mehrere Pushes erzeugen — pro PR läuft immer nur der neueste.
+concurrency:
+  group: island-pr-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -28,6 +33,11 @@ jobs:
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
           mkdir -p /tmp/pr
+          # Veralteter Event (PR-Head hat sich seitdem bewegt)? Dann prüft der
+          # Lauf des neueren Pushes — sonst würde hier ein Teilstand validiert
+          # und anschließend der ungeprüfte neue Head gemerged.
+          CUR=$(gh api "repos/${{ github.repository }}/pulls/$PR" --jq .head.sha)
+          if [ "$CUR" != "$HEAD_SHA" ]; then echo "⏭️ Head $HEAD_SHA veraltet (aktuell $CUR)"; echo "STALE=1" >> "$GITHUB_ENV"; exit 0; fi
           gh api "repos/${{ github.repository }}/pulls/$PR/files" --paginate --jq '.[].filename' > /tmp/all-touched.txt
           gh api "repos/${{ github.repository }}/pulls/$PR/files" --paginate --jq '.[] | select(.status != "removed") | .filename' > /tmp/changed.txt
           while read -r f; do
@@ -36,6 +46,7 @@ jobs:
           done < /tmp/changed.txt
 
       - name: Pfad-Schutz + Schema-Validierung
+        if: env.STALE != '1'
         env:
           AUTHOR: ${{ github.event.pull_request.user.login }}
         run: |
@@ -49,14 +60,17 @@ jobs:
           node scripts/validate.mjs "$AUTHOR" /tmp/pr /tmp/changed.txt
 
       - name: Auto-Merge
+        if: env.STALE != '1'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh pr merge "${{ github.event.pull_request.number }}" --squash
+        # --match-head-commit: nur exakt den validierten Stand mergen
+        run: gh pr merge "${{ github.event.pull_request.number }}" --squash --match-head-commit "${{ github.event.pull_request.head.sha }}"
 
       # Index direkt hier neu bauen: Pushes mit GITHUB_TOKEN lösen KEINE
       # weiteren Workflows aus (GitHub-Rekursionsschutz) — ein separater
       # on:push-Workflow startet nach dem Auto-Merge also nie.
       - name: Index neu aufbauen
+        if: env.STALE != '1'
         run: |
           git fetch origin main
           git checkout -B main origin/main

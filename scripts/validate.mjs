@@ -13,7 +13,8 @@ const [, , author, dir, listFile] = process.argv;
 if (!author || !dir || !listFile) { console.error('Argumente fehlen'); process.exit(2); }
 
 const MAX_FILE = 512 * 1024;
-const MAX_TOTAL = 2 * 1024 * 1024;
+const MAX_PACKS_FILE = 2 * 1024 * 1024; // packs.json wächst mit jedem KI-Pack (~1 KB/Gebäude)
+const MAX_TOTAL = 4 * 1024 * 1024;
 const ALLOWED = new Set(['island.json', 'packs.json', 'offers.json', 'accepts.json']);
 const USER_RE = /^[a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38}$/;
 
@@ -38,7 +39,8 @@ const json = {};
 for (const f of files) {
   const p = path.join(dir, f);
   const size = statSync(p).size;
-  if (size > MAX_FILE) fail(`${f}: ${size} Bytes > ${MAX_FILE}`);
+  const max = f.endsWith('/packs.json') ? MAX_PACKS_FILE : MAX_FILE;
+  if (size > max) fail(`${f}: ${size} Bytes > ${max}`);
   total += size;
   try { json[f] = JSON.parse(readFileSync(p, 'utf8')); }
   catch (e) { fail(`${f}: kein gültiges JSON (${e.message})`); }
@@ -85,7 +87,7 @@ if (packsFile) {
   const bad = (m) => fail(`${packsFile}: ${m}`);
   if (typeof d !== 'object' || d === null || Array.isArray(d)) bad('kein Objekt');
   if (d.owner !== author) bad(`owner ≠ PR-Autor`);
-  for (const [key, max] of [['buildings', 200], ['resources', 200], ['epochs', 30]]) {
+  for (const [key, max] of [['buildings', 1000], ['resources', 1000], ['epochs', 30]]) {
     if (d[key] !== undefined) {
       if (!Array.isArray(d[key]) || d[key].length > max) bad(`${key} ungültig/zu viele`);
       for (const it of d[key]) {

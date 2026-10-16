@@ -17,8 +17,8 @@ Gemeinsamer Online-Speicher für den asynchronen Multiplayer von
 1. Du darfst nur Dateien unter `islands/<dein-github-name>/` ändern.
 2. Nur JSON — keine Skripte, keine Binärdateien. Erlaubte Dateien:
    `island.json`, `packs.json`, `offers.json`, `accepts.json`.
-3. Max. 512 KB pro Datei, max. 2 MB pro Ordner; harte Stück-Limits
-   (max. 20 offene Angebote, 50 Accepts, 200 Gebäude-Definitionen).
+3. Max. 512 KB pro Datei (packs.json: 2 MB), max. 4 MB pro Ordner; harte Stück-Limits
+   (max. 20 offene Angebote, 50 Accepts, 1000 Gebäude-Definitionen).
 4. Inseln ohne Update seit **90 Tagen** fallen aus dem Index (Dateien bleiben;
    der nächste Upload bringt die Insel zurück).
 5. Moderation: `blocklist.json` (gepflegt vom Repo-Inhaber) nimmt Ordner aus
