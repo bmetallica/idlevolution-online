@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20T03:00:34.169Z",
+  "updatedAt": "2026-10-20T03:20:49.836Z",
   "islands": [
     {
       "owner": "bmetallica",
       "name": "Insel von bmetallica",
       "epoch": "gh-bmetallica--transcendence_age",
       "population": 2580,
-      "exportedAt": "2026-10-20T03:00:17.518Z",
+      "exportedAt": "2026-10-20T03:20:32.130Z",
       "hasOffers": true,
       "hasPacks": true
     }
